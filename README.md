@@ -136,11 +136,13 @@ Mes notes concernant l'installation de mon serveur
   - Certifs SSL gratuits [Let's encrypt](https://letsencrypt.org/fr/)
   - Tests certificats SSL [SSL Labs tests](https://www.ssllabs.com/ssltest/)
 - Mise en place serveur de mails (postfix)
+- Mise en place accès FTP pour utilisateurs existants [ProFTP](https://www.grafikart.fr/tutoriels/proftpd-755)
+  - Annuaire simple des accès en place
 
 ### Procédures
 
 - [Ajouter un utilisateur SSH via clés seulement](https://youtu.be/lXOdDal6qos?t=449) : Remplace le mot de passe.
-- Ajouter un utilisateur serveur par site et limiter son accès (docker ?)
+- Ajouter un utilisateur serveur par site et limiter son accès (docker/ftp/annuaire ?)
 - Vérifier les performances des différentes technos (analyse + logs)
 - Ajouter/Renouveler les certificats SSL (https)
   - CRON ?
