@@ -127,8 +127,11 @@ Mes notes concernant l'installation de mon serveur
 - Désactiver erreurs (php, etc.) & phpinfo en prod
   - Rendre accessible via page dédiée + pass ? (ou dev. suffisant..)
 - Script analyses performances (ex [config mysql](https://www.grafikart.fr/tutoriels/mysql-690))
+- Ajouter de la sécurité autant que possible > https://www.hacksplaining.com/lessons
+
 
 ### Procédures
 
 - [Ajouter un utilisateur SSH via clés seulement](https://youtu.be/lXOdDal6qos?t=449) : Remplace le mot de passe.
+- Ajouter un utilisateur serveur par site et limiter son accès (docker ?)
 - Vérifier les performances des différentes technos (analyse + logs)
