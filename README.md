@@ -3,6 +3,7 @@
 Mes notes concernant l'installation de mon serveur
 
 
+
 ## Tutoriel grafikart / Nginx
 
 [La liste de tutoriels vidéos](https://www.grafikart.fr/tutoriels/nginx-692)
@@ -12,6 +13,8 @@ Mes notes concernant l'installation de mon serveur
 [Tutoriel concerné](https://www.grafikart.fr/tutoriels/commandes-base-684)
 
 #### Liste des commandes
+
+[Si besoin de plus](https://explainshell.com/)
 
 | Commande | Options | Kwaksafé | Notes |
 |----------|---------|--------------------------------------------------------------------|----------------------|
@@ -41,6 +44,27 @@ Mes notes concernant l'installation de mon serveur
 | `sudo` |  | Exécuter la commande avec les droits max (`root`) | `Substitute user do` |
 |  | `-s` | .. sur plusieurs commandes d'affilée (pour quitter le mode `exit`) |  |
 | `clear` |  | Vider le contenu affiché de la console |  |
+| |  | |  |
+| `rsync -avhpz /Source /Sauvegarde` |  | Copie |  |
+|  | `-a` | (Archive) Récursive, avec droits, possessions, temps, etc. |  |
+|  | `-s` | Avec liens symboliques |  |
+|  | `-p` | Avec droits dossiers/fichiers |  |
+|  | `-o` | Avec possessions |  |
+|  | `-t` | Avec temps dernières modifications |  |
+|  | `-h` | Avec infos format humain |  |
+|  | `-p` | Avec progression & partiels |  |
+|  | `-z` | Avec compression (zip) avant envoi |  |
+|  | `-n` | (= `--dry-run`) Diff AVANT exécution |  |
+|  | `--exclude-from` | (~= .gitignore) Pattern d'exclusion (fichiers conf, etc.) à partir d'un fichier |  |
+|  | `-b` | Backup : Versionning de la copie ~précédente (incr.) |  |
+|  | `-e` | Si envoi vers serveur distant (via. SSH) permet de spécifier le port |  |
+
+
+
+
+
+
+
 
 #### Principaux dossiers
 
@@ -72,6 +96,25 @@ Mes notes concernant l'installation de mon serveur
 
 ##### Paquets recommandés
 
-| Nom du paquet | Notes |
-|---------------|--------------------------------------|
-| `htop` | Meilleure vue des processus en cours |
+| Nom du paquet | Notes | Url |
+|---------------|--------------------------------------|---|
+| `htop` | Meilleure vue des processus en cours | |
+| `rsync` | (Déjà installé) Copies et sauvegardes (incrémentales) | [tuto grafikart](https://www.youtube.com/watch?v=7Hb32v8e8W0) contient également exemple déploirement WP |
+
+
+
+-------
+
+# TODO
+
+## Configuration du serveur
+
+### One shot
+
+- [Changer port par défaut](https://youtu.be/lXOdDal6qos?t=239) : Meilleure sécurité, plus de mots de passe.
+- [Retirer connexion par mot de passe](https://youtu.be/lXOdDal6qos?t=324) : Meilleure sécurité, plus de mots de passe.
+- [Mise en place Rsync](https://www.youtube.com/watch?v=7Hb32v8e8W0)
+
+### Procédures
+
+- [Ajouter un utilisateur SSH via clés seulement](https://youtu.be/lXOdDal6qos?t=449) : Remplace le mot de passe.
