@@ -15,6 +15,7 @@ Mes notes concernant l'installation de mon serveur
 
 | Commande | Options | Kwaksafé | Notes |
 |----------|---------|--------------------------------------------------------------------|----------------------|
+| `Ctrl + C` |  | Arrêter la commande en cours |  |
 | `.` |  | Correspond au répertoire courant |  |
 | `..` |  | Répertoire parent |  |
 | `~` |  | Dossier utilisateur courant (`/home/max/`) |  |
@@ -59,3 +60,18 @@ Mes notes concernant l'installation de mon serveur
 | `proc/` | Infos sur les processus en cours |
 | `var/` | Tous les fichiers courants, qui vont être modifiés par l'utilisateur (backups, cache, **logs**, etc.) |
 | `home/` | Contiendra les dossiers des différents utilisateurs |
+
+#### Gestion des paquets
+
+| Commande | Notes |
+|----------------------------|--------------------------------------|
+| `apt-get -h` | Infos sur le gestionnaire de paquets |
+| `sudo apt-get update` | Mettre à jour la liste des dépôts |
+| `sudo apt-get install XXX` | Installer le paquet XXX |
+| `sudo agpt-get upgrade` | Mettre a jour la distribution linux |
+
+##### Paquets recommandés
+
+| Nom du paquet | Notes |
+|---------------|--------------------------------------|
+| `htop` | Meilleure vue des processus en cours |
