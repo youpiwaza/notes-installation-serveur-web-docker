@@ -139,6 +139,7 @@ Mes notes concernant l'installation de mon serveur
 - Mise en place accès FTP pour utilisateurs existants [ProFTP](https://www.grafikart.fr/tutoriels/proftpd-755)
   - Annuaire simple des accès en place
 - MeP parefeu (iptables)
+- MeP anti-brute force [fail2ban](https://www.grafikart.fr/tutoriels/fail2ban-698)
 
 ### Procédures
 
