@@ -101,6 +101,8 @@ Mes notes concernant l'installation de mon serveur
 
 | Nom du paquet | Notes | Url |
 |---------------|--------------------------------------|---|
+| `curl` | Installation de logiciels serveurs | |
+| `git` | Installation de logiciels serveurs (git clone) | |
 | `htop` | Meilleure vue des processus en cours | |
 | `rsync` | (Déjà installé) Copies et sauvegardes (incrémentales) | [tuto grafikart](https://www.youtube.com/watch?v=7Hb32v8e8W0) contient également exemple déploirement WP |
 
