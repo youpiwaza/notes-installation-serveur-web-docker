@@ -116,7 +116,10 @@ Mes notes concernant l'installation de mon serveur
 
 - [Changer port par défaut](https://youtu.be/lXOdDal6qos?t=239) : Meilleure sécurité, plus de mots de passe.
 - [Retirer connexion par mot de passe](https://youtu.be/lXOdDal6qos?t=324) : Meilleure sécurité, plus de mots de passe.
-- [Mise en place Rsync](https://www.youtube.com/watch?v=7Hb32v8e8W0)
+- Mise en place de backups automatiques via le CRON (~1 fois / jour, incrémental)
+  - [Mise en place Rsync](https://www.youtube.com/watch?v=7Hb32v8e8W0) pour les fichiers
+  - mysqldump > bdd sql
+  - Ajouter un clean des logs (zip après 2 semaines, suppression après 2 ans)
 - Créer un dossier log contenant les liens symboliques EXPLICITES vers les logs des différentes technos
 - Ajouter un script/la conf qui envoie un email en cas d'erreur côté serveur
 - Ajouter une page par défaut pour le serveur, en cas d'accès via l'IP
