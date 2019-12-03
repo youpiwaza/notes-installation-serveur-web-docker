@@ -132,7 +132,7 @@ Mes notes concernant l'installation de mon serveur
 - Ajouter de la sécurité autant que possible > https://www.hacksplaining.com/lessons
 - Installer REDIS, et implementer (node et WP) pour gain de perfs
   - Faire un test avec une base WP et faire un diff des perfs
-- Mise en place des [certificats SSL](https://www.grafikart.fr/tutoriels/apache-ssl-letsencrypt-746)
+- Mise en place des ~[certificats SSL](https://www.grafikart.fr/tutoriels/apache-ssl-letsencrypt-746)~ cf. [installation avancée](https://www.grafikart.fr/tutoriels/nginx-ssl-letsencrypt-747)
   - Certifs SSL gratuits [Let's encrypt](https://letsencrypt.org/fr/)
   - Tests certificats SSL [SSL Labs tests](https://www.ssllabs.com/ssltest/)
 - Mise en place serveur de mails (postfix)
