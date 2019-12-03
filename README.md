@@ -120,6 +120,8 @@ Mes notes concernant l'installation de mon serveur
 - Créer un dossier log contenant les liens symboliques EXPLICITES vers les logs des différentes technos
 - Ajouter une page par défaut pour le serveur, en cas d'accès via l'IP
 - Ajouter des pages personnalisées pour les différentes erreurs serveurs 50X
+- Désactiver erreurs (php, etc.) & phpinfo en prod
+  - Rendre accessible via page dédiée + pass ? (ou dev. suffisant..)
 
 ### Procédures
 
