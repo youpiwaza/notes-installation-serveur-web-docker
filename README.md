@@ -45,6 +45,7 @@ Mes notes concernant l'installation de mon serveur
 |  | `-g` | Changer le groupe d'un utilisateur |  |
 | `sudo` |  | Exécuter la commande avec les droits max (`root`) | `Substitute user do` |
 |  | `-s` | .. sur plusieurs commandes d'affilée (pour quitter le mode `exit`) |  |
+| `wget URI` |  | Récupérer le contenu d'une url | `Get from web` |
 | `clear` |  | Vider le contenu affiché de la console |  |
 | |  | |  |
 | `rsync -avhpz /Source /Sauvegarde` |  | Copie |  |
