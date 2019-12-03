@@ -150,6 +150,7 @@ Utiliser [Ansible](https://www.grafikart.fr/tutoriels/ansible-753) pour installe
 - [Ajouter un utilisateur SSH via clés seulement](https://youtu.be/lXOdDal6qos?t=449) : Remplace le mot de passe.
 - Ajouter un utilisateur serveur par site et limiter son accès (docker/ftp/annuaire ?)
 - Vérifier les performances des différentes technos (analyse + logs)
+  - Bande passante : [iperf3](https://github.com/esnet/iperf)
 - Ajouter/Renouveler les certificats SSL (https)
   - CRON ?
 - Envoi de mail + tester templates [mailinator](https://www.mailinator.com/)
