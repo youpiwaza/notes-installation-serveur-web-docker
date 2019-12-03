@@ -133,6 +133,7 @@ Mes notes concernant l'installation de mon serveur
 - Mise en place des [certificats SSL](https://www.grafikart.fr/tutoriels/apache-ssl-letsencrypt-746)
   - Certifs SSL gratuits [Let's encrypt](https://letsencrypt.org/fr/)
   - Tests certificats SSL [SSL Labs tests](https://www.ssllabs.com/ssltest/)
+- Mise en place serveur de mails (postfix)
 
 ### Procédures
 
@@ -140,3 +141,4 @@ Mes notes concernant l'installation de mon serveur
 - Ajouter un utilisateur serveur par site et limiter son accès (docker ?)
 - Vérifier les performances des différentes technos (analyse + logs)
 - Ajouter/Renouveler les certificats SSL (https)
+- Envoi de mail + tester templates [mailinator](https://www.mailinator.com/)
