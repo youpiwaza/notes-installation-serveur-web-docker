@@ -138,6 +138,7 @@ Mes notes concernant l'installation de mon serveur
 - Mise en place serveur de mails (postfix)
 - Mise en place accès FTP pour utilisateurs existants [ProFTP](https://www.grafikart.fr/tutoriels/proftpd-755)
   - Annuaire simple des accès en place
+- MeP parefeu (iptables)
 
 ### Procédures
 
@@ -147,3 +148,4 @@ Mes notes concernant l'installation de mon serveur
 - Ajouter/Renouveler les certificats SSL (https)
   - CRON ?
 - Envoi de mail + tester templates [mailinator](https://www.mailinator.com/)
+- Règles iptables
