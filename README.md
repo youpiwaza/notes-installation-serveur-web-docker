@@ -128,6 +128,8 @@ Mes notes concernant l'installation de mon serveur
   - Rendre accessible via page dédiée + pass ? (ou dev. suffisant..)
 - Script analyses performances (ex [config mysql](https://www.grafikart.fr/tutoriels/mysql-690))
 - Ajouter de la sécurité autant que possible > https://www.hacksplaining.com/lessons
+- Installer REDIS, et implementer (node et WP) pour gain de perfs
+  - Faire un test avec une base WP et faire un diff des perfs
 
 
 ### Procédures
