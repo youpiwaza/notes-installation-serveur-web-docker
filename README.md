@@ -41,6 +41,8 @@ Mes notes concernant l'installation de mon serveur
 |  | `-r` | Récursif |  |
 | `chown` |  | Changer la possession (`utilisateur:groupe`) | `Change owner` |
 |  | `-r` | Récursif |  |
+| `usermod` |  | Changer un utilisateur | `User modification` |
+|  | `-g` | Changer le groupe d'un utilisateur |  |
 | `sudo` |  | Exécuter la commande avec les droits max (`root`) | `Substitute user do` |
 |  | `-s` | .. sur plusieurs commandes d'affilée (pour quitter le mode `exit`) |  |
 | `clear` |  | Vider le contenu affiché de la console |  |
