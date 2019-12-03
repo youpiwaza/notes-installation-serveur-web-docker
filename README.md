@@ -114,6 +114,7 @@ Mes notes concernant l'installation de mon serveur
 - [Changer port par défaut](https://youtu.be/lXOdDal6qos?t=239) : Meilleure sécurité, plus de mots de passe.
 - [Retirer connexion par mot de passe](https://youtu.be/lXOdDal6qos?t=324) : Meilleure sécurité, plus de mots de passe.
 - [Mise en place Rsync](https://www.youtube.com/watch?v=7Hb32v8e8W0)
+- Créer un dossier log contenant les liens symboliques EXPLICITES vers les logs des différentes technos
 
 ### Procédures
 
