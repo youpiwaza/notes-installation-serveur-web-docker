@@ -116,6 +116,7 @@ Mes notes concernant l'installation de mon serveur
 
 ### One shot
 
+- Pimper terminal avec zsh et tmux [grafikart pimp terminal](https://www.grafikart.fr/tutoriels/pimp-my-shell-750)
 - [Changer port par défaut](https://youtu.be/lXOdDal6qos?t=239) : Meilleure sécurité, plus de mots de passe.
 - [Retirer connexion par mot de passe](https://youtu.be/lXOdDal6qos?t=324) : Meilleure sécurité, plus de mots de passe.
 - Mise en place de backups automatiques via le CRON (~1 fois / jour, incrémental)
