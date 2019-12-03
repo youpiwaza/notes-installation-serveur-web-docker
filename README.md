@@ -126,7 +126,9 @@ Mes notes concernant l'installation de mon serveur
 - Ajouter des pages personnalisées pour les différentes erreurs serveurs 50X
 - Désactiver erreurs (php, etc.) & phpinfo en prod
   - Rendre accessible via page dédiée + pass ? (ou dev. suffisant..)
+- Script analyses performances (ex [config mysql](https://www.grafikart.fr/tutoriels/mysql-690))
 
 ### Procédures
 
 - [Ajouter un utilisateur SSH via clés seulement](https://youtu.be/lXOdDal6qos?t=449) : Remplace le mot de passe.
+- Vérifier les performances des différentes technos (analyse + logs)
