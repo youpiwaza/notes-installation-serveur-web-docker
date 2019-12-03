@@ -118,6 +118,8 @@ Mes notes concernant l'installation de mon serveur
 - [Retirer connexion par mot de passe](https://youtu.be/lXOdDal6qos?t=324) : Meilleure sécurité, plus de mots de passe.
 - [Mise en place Rsync](https://www.youtube.com/watch?v=7Hb32v8e8W0)
 - Créer un dossier log contenant les liens symboliques EXPLICITES vers les logs des différentes technos
+- Ajouter une page par défaut pour le serveur, en cas d'accès via l'IP
+- Ajouter des pages personnalisées pour les différentes erreurs serveurs 50X
 
 ### Procédures
 
