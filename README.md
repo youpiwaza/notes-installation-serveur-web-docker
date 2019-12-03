@@ -141,4 +141,5 @@ Mes notes concernant l'installation de mon serveur
 - Ajouter un utilisateur serveur par site et limiter son accès (docker ?)
 - Vérifier les performances des différentes technos (analyse + logs)
 - Ajouter/Renouveler les certificats SSL (https)
+  - CRON ?
 - Envoi de mail + tester templates [mailinator](https://www.mailinator.com/)
