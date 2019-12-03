@@ -114,6 +114,9 @@ Mes notes concernant l'installation de mon serveur
 
 ## Configuration du serveur
 
+Utiliser [Ansible](https://www.grafikart.fr/tutoriels/ansible-753) pour installer/réinstaller le serveur de manière clean et automatique (plutôt que d'avoir de la doc partout)
+- Utiliser également pour les tâches courantes
+
 ### One shot
 
 - Pimper terminal avec zsh et tmux [grafikart pimp terminal](https://www.grafikart.fr/tutoriels/pimp-my-shell-750)
