@@ -130,10 +130,13 @@ Mes notes concernant l'installation de mon serveur
 - Ajouter de la sécurité autant que possible > https://www.hacksplaining.com/lessons
 - Installer REDIS, et implementer (node et WP) pour gain de perfs
   - Faire un test avec une base WP et faire un diff des perfs
-
+- Mise en place des [certificats SSL](https://www.grafikart.fr/tutoriels/apache-ssl-letsencrypt-746)
+  - Certifs SSL gratuits [Let's encrypt](https://letsencrypt.org/fr/)
+  - Tests certificats SSL [SSL Labs tests](https://www.ssllabs.com/ssltest/)
 
 ### Procédures
 
 - [Ajouter un utilisateur SSH via clés seulement](https://youtu.be/lXOdDal6qos?t=449) : Remplace le mot de passe.
 - Ajouter un utilisateur serveur par site et limiter son accès (docker ?)
 - Vérifier les performances des différentes technos (analyse + logs)
+- Ajouter/Renouveler les certificats SSL (https)
