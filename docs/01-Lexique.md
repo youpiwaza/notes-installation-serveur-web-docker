@@ -43,3 +43,8 @@ Des explications succinctes concernant les termes utilisés.
 | Automatisation installation & tâches | Ansible |
 | CI/CD | Jenkins |
 | Orchestration (gestion auto hosts & containers) | Docker swarm, Kubernetes, Mesos |
+
+
+### Navigation
+
+La suite, [l'hébergement](/02-Hebergement.md), ou retour à la [table des matières](/..).
