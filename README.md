@@ -36,8 +36,8 @@ Il va y avoir énormément de vidéos, ne pas hésiter à vitesse x2.
 5. [Rentrer dans le gras (docker++)](/docs/05-Docker.md)
 	- a. [Dockerfile / Création d'images dockers & opti](/docs/05a-Dockerfile.md)
 	- b. [Docker compose / multiples containers + communication](/docs/05b-Docker-compose.md)
-	- c. Docker persistance des données / volumes & links
-	- d. Docker network / Réseau interne (compose)
+	- c. [Docker persistance des données / volumes & links](/docs/05c-Volume-et-persistance.md)
+	- d. [Docker network / Réseau interne (compose)](/docs/hue.md)
 
 6. Liste des commandes
 	- a. linux
