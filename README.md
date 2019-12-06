@@ -14,7 +14,10 @@ Bon étant donné la masse d'infos, j'ai tout découpé.
 	- a. [Définitions](/docs/01-Lexique.md)
 	- b. [Technologies associées](/docs/01-Lexique.md#associations)
 	
-2. Mon hébergement
+2. [Hébergement](/docs/02-Hebergement.md)
+	- [Gammes](/docs/02-Hebergement.md#gammes)
+	- [Mon historique serveur](/docs/02-Hebergement.md#mon-historique-serveur)
+	- [Mon serveur actuel](/docs/02-Hebergement.md#mon-serveur-actuel)
 
 3. Pré-requis
 	- a. Connaissances de base
