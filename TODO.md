@@ -16,7 +16,7 @@
 	✓ c. Reverse proxy / Le client se connecte au serveur, qui dispatch derrière
 	✓ d. Docker / kwaksé
 	
-4. Tutos docker : Mettre les mains dedans
+✓ 4. Tutos docker : Mettre les mains dedans
 
 5. Liste des commandes
 - linux
