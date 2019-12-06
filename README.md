@@ -37,9 +37,9 @@ Il va y avoir énormément de vidéos, ne pas hésiter à vitesse x2.
 	- a. [Dockerfile / Création d'images dockers & opti](/docs/05a-Dockerfile.md)
 	- b. [Docker compose / multiples containers + communication](/docs/05b-Docker-compose.md)
 	- c. [Docker persistance des données / volumes & links](/docs/05c-Volume-et-persistance.md)
-	- d. [Docker network / Réseau interne (compose)](/docs/hue.md)
+	- d. [Docker network / Réseau interne (compose)](/docs/05d-Network.md)
 
-6. Liste des commandes
+6. [Liste des commandes](/docs/06-Commandes.md)
 	- a. linux
 	- b. Docker
 	- c. Docker-compose
