@@ -29,6 +29,10 @@ Récapitulatif très rapide OVH :
 	- Mais de nos jours en tout cas le tarif est très attractif.
 	- Mais a choisir je partirai sur un kimsufi (ce que j'avais avant..) car les prix sont similaires..
 
+_Note : Ne pas hésiter a s'abonner a la newsletter et remplacer le serveur quand il y a une bonne promotion !_
+	
+_Note : Dans tous les cas je recommande de toujours prendre du SSD, ca offre de ben meilleures perfs._
+
 
 ## Mon historique serveur
 
@@ -66,10 +70,6 @@ Au final pas mal de boulot, un peu la flemme de le maintenir, et quelques année
 **So you start++** : Des soldes pour la black friday > un serveur a 50€HT/mois à 35. En gros le double de performances pour le même prix. Beh je me suis lancé.
 
 ![Complètement overkill](http://stockage.masamune.fr/images/max/191128-SYS-config-max.jpg)
-
-_Note : Ne pas hésiter a s'abonner a la newsletter et remplacer le serveur quand il y a une bonne promotion !_
-
-_Note : Dans tous les cas je recommande de toujours prendre du SSD, ca offre de ben meilleures perfs._
 
 Du coup nouveau serveur tout propre, avec plein de bonnes résolutions !
 
