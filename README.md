@@ -11,8 +11,8 @@ Bon étant donné la masse d'infos, j'ai tout découpé.
 
 ## Table des matières
 
-1. Lexique
-	- a. [Définitions](/docs/01-Lexique.md)
+1. [Lexique](/docs/01-Lexique.md)
+	- a. [Définitions](/docs/01-Lexique.md#définitions)
 	- b. [Technologies associées](/docs/01-Lexique.md#associations)
 	
 2. [Hébergement](/docs/02-Hebergement.md)
