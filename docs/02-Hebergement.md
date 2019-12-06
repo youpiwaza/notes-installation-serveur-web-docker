@@ -80,4 +80,4 @@ Pour la suite de la doc, d'abord mes recherches, puis mon 'cahier des charges' s
 
 ### Navigation
 
-La suite, [les pré-requis](/docs/03-prerequis.md), ou retour à la [table des matières](https://github.com/youpiwaza/notes-serveur).
+La suite, [les pré-requis](/docs/03-Prerequis.md), ou retour à la [table des matières](https://github.com/youpiwaza/notes-serveur).

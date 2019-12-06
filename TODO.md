@@ -10,16 +10,11 @@
 	
 ✓ 2. Hébergements
 
-3. Pré-requis
-	a. Connaissances de base
-		- Commandes linux
-		- Structure de fichiers linux
-		- Yaml
-		- SSH
-
-	b. Installation d'un serveur web (Apache ou Nginx)
-	c. Reverse proxy / Le client se connecte au serveur, qui dispatch derrière
-	d. Docker / kwaksé
+✓ 3. Pré-requis
+	✓ a. Connaissances de base
+	✓ b. Installation d'un serveur web (Apache ou Nginx)
+	✓ c. Reverse proxy / Le client se connecte au serveur, qui dispatch derrière
+	✓ d. Docker / kwaksé
 	
 4. Tutos docker : Mettre les mains dedans
 
