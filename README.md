@@ -19,11 +19,16 @@ Bon étant donné la masse d'infos, j'ai tout découpé.
 	- [Mon historique serveur](/docs/02-Hebergement.md#mon-historique-serveur)
 	- [Mon serveur actuel](/docs/02-Hebergement.md#mon-serveur-actuel)
 
-3. Pré-requis
-	- a. Connaissances de base
-	- b. Installation d'un serveur web
-	- c. Gestion de plusieurs sites / Reverse proxy
-	- d. Docker / kwaksé
+
+### Théorie, apprentissage, tests
+
+Il va y avoir énormément de vidéos, ne pas hésiter à vitesse x2.
+
+3. [Pré-requis](/docs/03-Prerequis.md)
+	- a. [Connaissances de base](/docs/03-Prerequis.md#connaissances-de-base)
+	- b. [Installation d'un serveur web](/docs/03-Prerequis.md#installation-dun-serveur-web)
+	- c. [Gestion de plusieurs sites / Reverse proxy](/docs/03-Prerequis.md#gestion-de-plusieurs-sites)
+	- d. [Docker / kwaksé](/docs/03-Prerequis.md#docker--kwaksé)
 	
 4. Tutos docker : Mettre les mains dedans
 
@@ -45,7 +50,12 @@ Bon étant donné la masse d'infos, j'ai tout découpé.
 
 8. Mes questions
 
-9. Pratique / Mon serveur
-	- a. Exigences
-	- b. Mise en place
+
+### Pratique
+
+Après tout cet apprentissage, il est temps de mettre en place & monter en stack.
+
+9. Exigences
+
+10. Mise en place concrète
 
