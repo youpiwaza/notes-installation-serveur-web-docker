@@ -47,4 +47,4 @@ Des explications succinctes concernant les termes utilisés.
 
 ### Navigation
 
-La suite, [l'hébergement](/docs/02-Hebergement.md), ou retour à la [table des matières](/).
+La suite, [l'hébergement](/docs/02-Hebergement.md), ou retour à la [table des matières](https://github.com/youpiwaza/notes-serveur).
