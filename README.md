@@ -1,9 +1,10 @@
-
-# Notes serveur
+# Installation d'un serveur web (Docker et autres)
 
 Mes notes concernant l'installation de mon serveur (montée en compétence DevOps).
 
 Le tout compilé, annoté et réorganisé afin de vous permettre d'apprendre tout de manière optimisée.
+
+Le but est de mettre en place une architecture clean & sécurisée à base de Docker, en respectant les bonnes pratiques :)
 
 Bon étant donné la masse d'infos, j'ai tout découpé.
 
