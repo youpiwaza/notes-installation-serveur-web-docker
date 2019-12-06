@@ -8,7 +8,7 @@
 	✓ a. Définitions
 	✓ b. Noms = technos
 	
-2. Comparatif hébergements
+✓ 2. Hébergements
 
 3. Pré-requis
 	a. Connaissances de base
