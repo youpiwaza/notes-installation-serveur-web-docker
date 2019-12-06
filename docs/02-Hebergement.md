@@ -67,6 +67,10 @@ Au final pas mal de boulot, un peu la flemme de le maintenir, et quelques année
 
 ![Complètement overkill](http://stockage.masamune.fr/images/max/191128-SYS-config-max.jpg)
 
+_Note : Ne pas hésiter a s'abonner a la newsletter et remplacer le serveur quand il y a une bonne promotion !_
+
+_Note : Dans tous les cas je recommande de toujours prendre du SSD, ca offre de ben meilleures perfs._
+
 Du coup nouveau serveur tout propre, avec plein de bonnes résolutions !
 
 Architecture orientée DevOps, avec tout bien séparé dans des conteneurs et tout et tout.
