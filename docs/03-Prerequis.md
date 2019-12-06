@@ -15,6 +15,9 @@ Durée _~1h en x2_
 | Traversy media | Connexion en ssh, clés & ports | Utilisé pour accéder au serveur | [Go](https://www.youtube.com/watch?v=hQWRp-FdTpc) |
 
 
+Il y a dans ce repo une [doc dédiée](/docs/06-Commandes.md) pour les commandes & un récap de l'arbo linux.
+
+
 ## Installation d'un serveur web
 
 Installation d'un serveur web (Apache ou Nginx)
