@@ -40,9 +40,9 @@ Il va y avoir énormément de vidéos, ne pas hésiter à vitesse x2.
 	- d. [Docker network / Réseau interne (compose)](/docs/05d-Network.md)
 
 6. [Liste des commandes](/docs/06-Commandes.md)
-	- a. [Linux](/docs/06-Commandes.md)
-	- b. [Docker](/docs/06-Commandes.md)
-	- c. [Divers](/docs/06-Commandes.md)
+	- a. [Linux](/docs/06-Commandes.md#linux)
+	- b. [Docker](/docs/06-Commandes.md#docker)
+	- c. [Divers](/docs/06-Commandes.md#divers)
 	
 7. Avancé
 	- a. Orchestration : plein de hosts & containers docker + masters qui surveillent
