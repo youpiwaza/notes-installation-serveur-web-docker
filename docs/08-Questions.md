@@ -7,20 +7,21 @@ Ainsi que leurs réponses (ajoutées au fil de l'eau) et les justifications.
 
 **Liste des questions**
 
-- [✓] [Comment gérer plusieurs sites depuis le même serveur ?](#hue) / Reverse proxy
-	- [✗] [Mais pour les sites utilisant un serveur NodeJS ? Sont-ils a la suite de Nginx ? Ou ~load balancer](#hue)
-	- [✗] [Bref, qui gère la répartition du trafic entrant ?](#hue)
-- [✓] [L'orchestration est-elle nécessaire a mon niveau ?](#hue) / Non, mais on va le faire quand même
-	- [✗] [Cela peut-il fonctionner avec un seul serveur, un seul hôte ?](#hue)
-- [✓] [Dois-je installer Docker directement sur l'hôte, ou passer par Ansible ?](#hue) / Ansible (config auto)
-	- [✓] [Pourquoi ne pas utiliser une image ou un build Docker ? Même fait maison](#hue) / Eviter Docker in Docker + sécurité de base
-- [✓] [Création d'un container par technologie ? Ou création d'un container par service par site ?](#hue) / Un par service
-- [✓] [Comment (bien) gérer les données des conteneurs ? (données persistées)](#hue) / Volumes pour BDD, Link pour sources & logs
-- [✗] [tf is a microservice ?](#hue) / ?
-- [✓] [Comment maintenir un service permanent, y compris lors de majs/problèmes](#hue) / Orchestration
-- [✗] [Sur l'hôte, déploie t-on un seul conteneur Jenkins, ou un par site ?](#hue) / ?
-- [✗] [Pour les environnements de preprod & prod, est-il possible de n'avoir d'un build Docker ?](#hue) / ?
-	- [✗] [Est-ce que le docker compose est obligatoire ? Jenkins gère t-il tout cela ?](#hue)
+- [✓] [Comment gérer plusieurs sites depuis le même serveur ?](#comment-gérer-plusieurs-sites-depuis-le-même-serveur-) / Reverse proxy
+	- [✓] [Mais pour les sites utilisant un serveur NodeJS ? Sont-ils a la suite de Nginx ? Ou ~load balancer](#mais-pour-les-sites-utilisant-un-serveur-nodejs--sont-ils-a-la-suite-de-nginx--ou-load-balancer) / Nginx renvoie vers NodeJs
+	- [✓] [Bref, qui gère la répartition du trafic entrant ?](#bref-qui-gère-la-répartition-du-trafic-entrant-) / Full Nginx
+- [✓] [L'orchestration est-elle nécessaire a mon niveau ?](#lorchestration-est-elle-nécessaire-a-mon-niveau-) / Non, mais on va le faire quand même
+	- [✗] [Cela peut-il fonctionner avec un seul serveur, un seul hôte ?](#x-cela-peut-il-fonctionner-avec-un-seul-serveur-un-seul-hôte-)
+- [✓] [Dois-je installer Docker directement sur l'hôte, ou passer par Ansible ?](#dois-je-installer-docker-directement-sur-lhôte-ou-passer-par-ansible-) / Ansible (config auto)
+	- [✓] [Pourquoi ne pas utiliser une image ou un build Docker ? Même fait maison](#pourquoi-ne-pas-utiliser-une-image-ou-un-build-docker--même-fait-maison) / Eviter Docker in Docker + sécurité de base
+- [✓] [Création d'un container par technologie ? Ou création d'un container par service par site ?](#création-dun-container-par-technologie--ou-création-dun-container-par-service-par-site-) / Un par service
+- [✓] [Comment (bien) gérer les données des conteneurs ? (données persistées)](#comment-bien-gérer-les-données-des-conteneurs--données-persistées) / Volumes pour BDD, Link pour sources & logs
+- [✗] [tf is a microservice ?](#x-tf-is-a-microservice-) / ?
+- [✓] [Comment maintenir un service permanent, y compris lors de majs/problèmes](#comment-maintenir-un-service-permanent-y-compris-lors-de-majsproblèmes) / Orchestration
+- [✗] [Sur l'hôte, déploie t-on un seul conteneur Jenkins, ou un par site ?](#x-sur-lhôte-déploie-t-on-un-seul-conteneur-jenkins-ou-un-par-site-) / ?
+- [✓] [Pour les environnements de preprod & prod, est-il possible de n'avoir d'un build Docker ?](#pour-les-environnements-de-preprod--prod-est-il-possible-de-navoir-dun-build-docker-) / Oui, et il le faut
+	- [✗] [Est-ce que le docker compose est obligatoire ? Jenkins gère t-il tout cela ?](#x-est-ce-que-le-docker-compose-up-est-obligatoire--jenkins-gère-t-il-tout-cela-)
+- [✗] [Peut-on avoir des images/builds Docker avec uniquement du code source ? Est-ce utile ?](#hey) / ?
 
 
 
@@ -31,14 +32,14 @@ Utiliser Nginx (gestion des requêtes entrantes) avec [reverse proxy](https://gi
 Cela permet de rediriger chaque noms de domaine vers même la même IP, mais sur un port différent (ce qui correspondra aux différents containers).
 
 
-### X Mais pour les sites utilisant un serveur NodeJS ? Sont-ils a la suite de Nginx ? Ou ~load balancer
+### Mais pour les sites utilisant un serveur NodeJS ? Sont-ils a la suite de Nginx ? Ou ~load balancer
 
-todo..
+Nginx sert de load balancer, cf. [Load Balancing with NGINX](https://www.youtube.com/watch?v=2X4ZO5tO7Co).
 
 
-### X Bref, qui gère la répartition du trafic entrant ?
+### Bref, qui gère la répartition du trafic entrant ?
 
-todo..
+Nginx..
 
 
 
@@ -120,13 +121,15 @@ Besoin d'en savoir plus sur les micro-services et leur implémentation.
 
 
 
-## X Pour les environnements de preprod & prod, est-il possible de n'avoir d'un build Docker ?
+## Pour les environnements de preprod & prod, est-il possible de n'avoir q'un build Docker ?
 
 > Dans la mesure ou les sources ne sont pas censées changer 'en live' mais bien être déployées une fois validées..
 
 Surtout sachan que la bdd peut provenir d'un `volume` dédié..
 
-todo..
+Oui, et c'est même le but. cf. [Kubernetes The Easy Way!](https://youtu.be/kOa_llowQ1c?t=863).
+
+Cela ne sert à rien de tester l'image en preprod si ce n'est pas la même qui est poussée en prod..
 
 
 ### X Est-ce que le docker compose up est obligatoire ? Jenkins gère t-il tout cela ?
@@ -134,6 +137,24 @@ todo..
 > Si mise a jour des sources contenues dans le container php uniquement, et que rien n'a changé dans le container Mysql
 
 todo.. conf jenkins ?
+
+
+
+## PHP est-il dépendant de Nginx ? (un seul container pour les deux)
+
+Non. Nginx peut être lancé dans un conteneur, et PHP dans un autre.
+
+Par contre, il faut qu'ils soient en réseaux afin de pouvoir être utilisés.
+
+cf. [Image dockerhub PHP-FPM](https://hub.docker.com/r/bitnami/php-fpm/#Connecting-to-other-containers), il y a un exemple de conf composée `Ctrl + F` "Connecting-to-other-containers".
+
+
+
+## X Peut-on avoir des images/builds Docker avec uniquement du code source ? Est-ce utile ?
+
+> Injection dans d'autres build Docker (php, etc.) ou dans les dossiers linkés ?
+
+todo...
 
 
 

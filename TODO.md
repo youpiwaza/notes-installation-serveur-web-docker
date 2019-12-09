@@ -1,45 +1,44 @@
-✓ Page d'accueil
+SE RENSEIGNER AVANT DE GOYER
+----------------------------
 
-✓ Description courte
+stackshare : comparaison de technos
+	https://stackshare.io/stackups/ansible-vs-jenkins
 
-✓ Table des matières
+Mots clés docker / A RANGER AVANT DE REPRENDRE FORMATION
 
-✓ 1. Lexique
-	✓ a. Définitions
-	✓ b. Noms = technos
+-	kubernetes
+-	docker for web hosting
+-	travis ci
+-	flow proxy
+-	rex-ray docker
+-	docker alpine
+-	nginx request processing
+-	docker volume persistent data
+-	microservice / https://microservices.io/
+-	vessel docker
+-	docker source control
+-	websockets ? besoin pour nginx https://www.grafikart.fr/tutoriels/nodejs-nginx-960
+- ansible++, et ansible galaxy
 	
-✓ 2. Hébergements
-
-✓ 3. Pré-requis
-	✓ a. Connaissances de base
-	✓ b. Installation d'un serveur web (Apache ou Nginx)
-	✓ c. Reverse proxy / Le client se connecte au serveur, qui dispatch derrière
-	✓ d. Docker / kwaksé
+-	docker multi stage build
+-	dockercon
+-	docker swarm
+-	https://github.com/oupala/apaxy
 	
-✓ 4. Tutos docker : Mettre les mains dedans
+-	✓ tmux
+-	✓ docker orchestration > kubernetes
+	
+Technos a check
 
-✓ 5. Liste des commandes
-✓ - linux
-✓ - docker
-✓ - docker-compose
+-	node express
+-	Netflix Titus
+-	traefik
+-	codeship
+-	axios
+-	Migrer de Atom a vscode ? // atom vs vscode / most popular ide
+-	Tuto serveur node complet [ici](https://www.youtube.com/watch?v=XCgCjasqEFo&list=PLQlWzK5tU-gDyxC1JTpyC2avvJlt3hrIh&index=2)
 
-6. Rentrer dans le gras (docker++)
-	a. Dockerfile / Création d'images dockers & opti
-	b. Docker compose / multiples containers + communication entre
-	c. Docker persistance des données / volumes & links
-	d. Docker network / Réseau interne (compose)
 
-7. Avancé
-	a. Orchestration : plein de hosts & containers docker + masters qui surveillent
-	b. Docker machine / Faire 'run' sur de multiples autres hosts
-	c. Microservices / Tout éclater, 1 container pour 1 table de bdd x)
-
-8. Mes questions
-
-9. Pratique / Mon serveur
-	a. Exigences
-	b. Choix technos
-	c. Mise en place
 
 
 

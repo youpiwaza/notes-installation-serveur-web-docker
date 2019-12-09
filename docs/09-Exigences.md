@@ -42,6 +42,15 @@ Liste de ce que doit être capable de faire mon serveur, en français (éviter l
 		- Cf. serveur de backup fourni
 	- Backup des versions des images/build docker
 
+- Gestion des mails
+
+
+## Confort utilisateur
+
+- www.truc.com, truc.com, https://www.truc.com > tous redirigent vers https://truc.com
+- Gestions des pages d'erreurs, possibilité de les customiser (404, 500, etc.)
+
+
 
 
 ### Navigation

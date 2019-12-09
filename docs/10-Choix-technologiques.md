@@ -3,10 +3,19 @@
 Parce que pour chaque demande il existe plusieurs technologies pour y répondre, ici on fait et justifie nos choix, avant de les appliquer.
 
 
+## Variables d'environnement/globales
+
+todo..
+
+
 
 ## Orchestration
 
-Docker swarm ou Kubernetes ?
+> Installation/Réplication du serveur
+> Gestion des containers
+> Gestion de la scalabilité + No down time (répliques)
+
+Possibilités : Docker swarm / Kubernetes / Ansible ?
 
 https://vexxhost.com/blog/kubernetes-vs-docker-swarm-containerization-platforms/
 
@@ -18,9 +27,13 @@ prod > 2 répliques
 
 ## Installation du serveur
 
+> Machine hôte du Docker
+
+Possibilités : Ubuntu / ~~Debian / CentOs / Alpine / RanchOS~~
+
 Installation de base d'un Ubuntu, pas de véritable distribution linux recommandée pour être l'hôte de Docker.
 
-Utilisation d'Ansible pour faire la configuration de l'hôte
+Utilisation d'Ansible pour faire la configuration de l'hôte ?
 
 - Installation de terminaux
 	- zsh
@@ -32,8 +45,28 @@ Utilisation d'Ansible pour faire la configuration de l'hôte
 	- Clean après combien de temps ?
 
 
+### Arborescence / Dossiers
+
+Repomper [tuto grafikart ansible](https://www.youtube.com/watch?v=DwNapBHypE8)
+
+
+
+## Load balancer
+
+> Répartition du trafic entrant vers ce qu'il faut
+
+Possibilités : Nginx / ~~Node~~
+
+> Node n'est pas recommandé pour la mise en place de multiples sites (cf. grafikart v)
+
+Nginx, [tuto grafikart](https://www.grafikart.fr/tutoriels/nginx-692) avec MeP + logs + Redirections + Erreurs.
+
+
+
 
 ## Docker
+
+> Parce que la containerisation, c'est ~~la vie~~ pas de gestion d'environnement, portable, scalable
 
 
 ### Gestion de la persistance des données
@@ -48,10 +81,29 @@ Utilisation d'Ansible pour faire la configuration de l'hôte
 	- CRON de clean
 
 
+### Images à utiliser
+
+Vérifier compatibilités avec Kubernetes
+
+- [Nginx](https://hub.docker.com/search?q=nginx&type=image) > Nginx ou Nginx-ingress ? Ou kubernetes direct
+	-	INGRESS RECOMMANDE POUR KUBERNETES / https://www.youtube.com/watch?v=SC7lLm6QAb8
+- [PHP](https://hub.docker.com/r/bitnami/php-fpm/#Connecting-to-other-containers) ?
+- [Node](https://hub.docker.com/_/node)
+
+
+## Orchestration / Ajout de site
+
+> Création d'utilisateur linux (+ droits) + dossiers (sources, (bdd), logs, etc.) + installation de base
+
+Ansible + role + variables ? [tuto grafikart](https://www.youtube.com/watch?v=DwNapBHypE8)
+
+
 
 ## Déploiement
 
-Jenkins ?
+Possibilités : Ansible / Jenkins / Kubernetes ?
+
+Kubernetes peut le faire : [Kubernetes The Easy Way!](https://youtu.be/kOa_llowQ1c?t=863)
 
 dev/preprod/prod
 
