@@ -18,10 +18,10 @@
 	
 ✓ 4. Tutos docker : Mettre les mains dedans
 
-5. Liste des commandes
-- linux
-- docker
-- docker-compose
+✓ 5. Liste des commandes
+✓ - linux
+✓ - docker
+✓ - docker-compose
 
 6. Rentrer dans le gras (docker++)
 	a. Dockerfile / Création d'images dockers & opti
@@ -37,7 +37,9 @@
 8. Mes questions
 
 9. Pratique / Mon serveur
-	a. Exigences et mise en place
+	a. Exigences
+	b. Choix technos
+	c. Mise en place
 
 
 

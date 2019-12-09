@@ -44,19 +44,21 @@ Il va y avoir énormément de vidéos, ne pas hésiter à vitesse x2.
 	- b. [Docker](/docs/06-Commandes.md#docker)
 	- c. [Divers](/docs/06-Commandes.md#divers)
 	
-7. Avancé
+7. [Avancé](/docs/07-Avance.md)
 	- a. Orchestration : plein de hosts & containers docker + masters qui surveillent
 	- b. Docker machine / Faire 'run' sur de multiples autres hosts
 	- c. Microservices / Tout éclater, 1 container pour 1 table de bdd x)
 
-8. Mes questions
+8. [Mes questions](/docs/08-Questions.md)
 
 
 ### Pratique
 
 Après tout cet apprentissage, il est temps de mettre en place & monter en stack.
 
-9. Exigences
+9. [Exigences](/docs/09-Exigences.md)
 
-10. Mise en place concrète
+10. [Choix technologiques](/docs/10-Choix-technologiques.md)
+
+11. [Mise en place](/docs/11-Mise-en-place.md)
 
