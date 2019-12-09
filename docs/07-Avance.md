@@ -4,7 +4,6 @@ Les notions un peu plus avancées, qui vont surement se choper leur propre dossi
 
 - Orchestration
 - Microservices
-- Docker machine
 
 
 
