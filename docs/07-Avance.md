@@ -32,15 +32,15 @@ Très accessible, très bons tutos.
 
 [Doc offi Ansible](https://www.ansible.com/integrations/containers/docker)
 
-	- Possibilité de créer les containers via Ansible
-	- + gestion de la machine hôte
-	- Interface graphique ~~[Ansible tower](https://www.ansible.com/products/tower)~~ [Version open source : AWS](https://github.com/ansible/awx)
-		- ~~Démo gratuite ? Prix non communiqués~~
-		- AWX > [doc tower](https://docs.ansible.com/ansible-tower/index.html)
-		- Notifs slack
-		- Gestion via API
-		- Historique jobs
-		- Agenda + ~CRONS
+- Possibilité de créer les containers via Ansible
+- + gestion de la machine hôte
+- Interface graphique ~~[Ansible tower](https://www.ansible.com/products/tower)~~ [Version open source : AWS](https://github.com/ansible/awx)
+	- ~~Démo gratuite ? Prix non communiqués~~
+	- AWX > [doc tower](https://docs.ansible.com/ansible-tower/index.html)
+	- Notifs slack
+	- Gestion via API
+	- Historique jobs
+	- Agenda + ~CRONS
 
 
 ### Kubernetes
