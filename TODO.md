@@ -2,7 +2,6 @@ SE RENSEIGNER AVANT DE GOYER
 ----------------------------
 technos a connaitre en surface, pour choix
 
--	travis ci
 -	flow proxy
 -	rex-ray docker
 -	nginx request processing
@@ -14,10 +13,8 @@ Se manger la doc officielle sur les technos choisies
 
 - Nginx
 - Docker
-	-	Docker volume persistent data
-	-	Docker alpine
-	- Docker source control
 	- Docker from scratch
+	- Docker source control
 
 
 Optimisations

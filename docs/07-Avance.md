@@ -4,6 +4,7 @@ Les notions un peu plus avancées, qui vont surement se choper leur propre dossi
 
 - Orchestration
 - Microservices
+- CI/CD
 
 
 
@@ -67,7 +68,7 @@ A voir, il existe des [configs Ansible](https://blog.ruanbekker.com/blog/2018/06
 	- [Concepts clés](https://docs.docker.com/engine/swarm/key-concepts/)
 		- Un node = 1 docker. Possibilité de plusieurs Nodes sur une seule machine (même si reco machines !=, cloud)
 		- Nodes chefs & péons > Managers & workers. Les managers envoient des tasks aux workers
-		-	Service : task function (can be called, reused) > Spécifie quel worker & quelle commande y éxécuter
+		-	Service : task function (can be called, reused) > Spécifie quel worker & quelle commande y exécuter
 		- Le manager utilise INGRESS load balancing et se charge de rendre le service dispo a l'exterieur (il assignera la tâche au worker dispo)
 	- [Tutoriel swarm](https://docs.docker.com/engine/swarm/swarm-tutorial/)
 		- Comprend
@@ -127,6 +128,110 @@ Enormément d'API REST (via URL). Trop de trucs à dire.
 
 
 
+## CI/CD
+
+*Continuous Integration / Continuous Développement*
+
+Lors de commits/push, exécution automatique de tests unitaires. Si tout est good, passage en pré-prod.
+
+- [Introduction CI/CD](https://www.youtube.com/watch?v=g0qSsex0Reg)
+- [Article plus poussé](https://djangostars.com/blog/continuous-integration-circleci-vs-travisci-vs-jenkins/)
+
+Possibilités : ~~Jenkins / Travis CI~~
+
+Pas mis en place dans un premier temps.
+
+A voir si implémentation rapide via une image Docker.
+
+
+### Jenkins
+
+L'une des référence.
+
+[Site officiel](https://jenkins.io/).
+
+- [Tutos officiels](https://jenkins.io/doc/pipeline/tour/getting-started/) // pas faits
+- [Image Docker](https://hub.docker.com/r/jenkins/jenkins/)
+
+
+### Travis CI
+
+Assez connu également.
+
+[travis ci](https://travis-ci.org/)
+
+- Outil de déploiement + déploiement automatiques (UT) + interface graphique ?
+	- deploy to GitHub pages
+	- send notifications
+	- != stages
+	
+- [Tutoriel](https://docs.travis-ci.com/user/tutorial/)
+	- Assez pourri (compile du ruby.. sans code ruby, je comprend pas sur quoi il fait les trucs) mais fonctionne
+	- Connexion directe avec github
+	- Interface en ligne sur leur site
+	- Peut [s'interfacer avec Docker](https://docs.travis-ci.com/user/docker/)
+
+
+### Ansible ?
+
+Yeah non. Ansible peut être appelé par des softs de CI/CD.
+
+Par exemple, si Jenkins fait passer tous les tests à la release, il peut appeler un script Ansible pour passer en prod.
+
+- [Doc officielle](https://www.ansible.com/use-cases/continuous-delivery)
+- [Blog offi, exemple](https://www.redhat.com/en/blog/integrating-ansible-jenkins-cicd-process)
+
+
+### Comparatifs
+
+- [Stackoverflow](https://stackoverflow.com/questions/32422264/jenkins-vs-travis-ci-which-one-would-you-use-for-a-open-source-project)
+	- Jenkins est gratuit et on peut l'héberger, Travis ci en ligne
+	-	Travis > Plus facile d'avoir différents tests par branches (config dans projet, fichier .yaml)
+	- Travis recommandé pour petits projets, mais généralement Jenkins plus recommandé pour ensemble de projets (un seul setup et/ou possibilité 1 par projet)
+- [Autre](https://www.guru99.com/jenkins-vs-travis.html)
+	- **/!\ Travis CI gratuit pour les projets non commerciaux uniquement**
+	- Jenkins favorisé
+
+
+### Choix
+
+Jenkins
+
+
+
 ### Navigation
 
 La suite, [Mes questions](/docs/08-Questions.md), ou retour à la [table des matières](https://github.com/youpiwaza/notes-serveur).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

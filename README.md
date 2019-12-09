@@ -44,9 +44,10 @@ Il va y avoir énormément de vidéos, ne pas hésiter à vitesse x2.
 	- b. [Docker](/docs/06-Commandes.md#docker)
 	- c. [Divers](/docs/06-Commandes.md#divers)
 	
-7. [Avancé](/docs/07-Avance.md)
+7. [Avancé](/docs/07-Avance.md) / Découverte des concepts avancés
 	- a. [Orchestration](/docs/07-Avance.md#orchestration) / Config Host & Tâches usuelles & Essains de conteneurs
-	- b. [Microservices](07-Avance.md#microservices-plus-tard) / Tout éclater, 1 container pour 1 service (~= 1 table de bdd x))
+	- b. [Microservices](/docs/07-Avance.md#microservices-plus-tard) / Tout éclater, 1 container pour 1 service (~= 1 table de bdd x))
+	- c. [CI/CD](/docs/07-Avance.md#ci-cd) / Intégration continue
 
 8. [Mes questions](/docs/08-Questions.md)
 

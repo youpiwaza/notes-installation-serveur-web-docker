@@ -28,7 +28,7 @@ _^ Focus docker file & docker compose
 |-----------|----------------------------------|----------------------------------------------|---------------------------------------------|-------------------|
 | Dockercon | Creating Effective Docker Images | BP : Réduire taille images et ^vitesse build | [Go](https://www.youtube.com/watch?v=vlS5EiapiII) | **Indispensable** |
 
-_^ Image alpine plutot que ubuntu/debian (selon besoin)
+_^ [Image alpine](https://nickjanetakis.com/blog/the-3-biggest-wins-when-using-alpine-as-a-base-docker-image) plutot que ubuntu/debian (selon besoin)
 ^ Reco nodejs 23:50_
 
 | Source | Titre | Sujet | Lien | Notes |

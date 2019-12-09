@@ -107,11 +107,46 @@ Ansible + role + variables ? [tuto grafikart](https://www.youtube.com/watch?v=Dw
 
 ## Déploiement
 
-Possibilités : Ansible / Jenkins / Kubernetes ?
+> dev > preprod > prod
+
+Possibilités : Ansible /  / Kubernetes ?
 
 Kubernetes peut le faire : [Kubernetes The Easy Way!](https://youtu.be/kOa_llowQ1c?t=863)
 
-dev/preprod/prod
+Choix plutôt sur Ansible/gulp. Dépend vraiment des technos.
+
+**Environnements à prévoir**
+
+- dev / Développement en cours, tests en ligne
+- preprod / Build de l'image, et test client avant mise en prod
+- prod / Build, site public
+- debug / Possibilité de monter une image ancienne spécifique (rollback)
+
+
+### CI/CD
+
+> Automatisation du process  
+> dev > (ut) > (build) > preprod > prod  
+
+Possibilités : Jenkins / Travis CI
+
+**Plus tard**
+
+Mais [Jenkins](/docs/07-Avance.md#ci-cd).
+
+
+### Déploiement scalable
+
+> Déployer des conteneurs similaires afin d'éviter les problèmes, et ajouter la possibilité d'optimiser les performances sur différentes machines de manière simplifiée et automatique.
+
+Possibilités : ~Ansible / Kubernetes / Docker swarm ?
+
+**Plus tard**
+
+Kubernetes plus populaire, mais j'ai un meilleur feeling avec le swarm.
+
+Possibilité de gérer les deux via Ansible (exécution des commande via scripts yaml).
+
 
 
 ### Navigation
