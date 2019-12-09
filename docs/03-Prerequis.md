@@ -50,6 +50,12 @@ Durée _~10m en x2_
 |  | Run Multiple Site from one IP with reverse proxy Nginx | **1 ip, redirige vers même ip différents ports** | [Go](https://www.youtube.com/watch?v=x1fnOJsX6wE) | **Indispensable** |
 
 
+### Notes
+
+Possibilité de passer par Ansible pour automatiser la gestuib des NDD & des technologies déployées.
+
+
+
 ## Docker / kwaksé
 
 ~~Et bien Jammy, c'est très simple~~

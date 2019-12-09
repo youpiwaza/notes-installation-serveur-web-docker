@@ -1,8 +1,9 @@
 SE RENSEIGNER AVANT DE GOYER
 ----------------------------
+
+CLEAN EXIGENCES & CHOIX TECHNO >> rsync les deux && définir les plus tard dans exigences pour roadmap && ensuite prioriser && attaquer
+
 technos a connaitre en surface, pour choix
-
-
 
 -	rex-ray docker
 -	nginx request processing
