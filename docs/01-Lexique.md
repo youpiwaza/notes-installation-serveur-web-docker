@@ -42,7 +42,7 @@ Des explications succinctes concernant les termes utilisés.
 | Serveur DNS | OVH, BindOf |
 | Automatisation installation & tâches | Ansible |
 | CI/CD | Jenkins |
-| Orchestration (gestion auto hosts & containers) | Docker swarm, Kubernetes, Mesos |
+| Orchestration (gestion auto hosts & containers) | Docker swarm, Kubernetes, Mesos, Nomad |
 
 
 ### Navigation
