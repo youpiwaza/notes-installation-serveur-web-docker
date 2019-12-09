@@ -2,7 +2,8 @@ SE RENSEIGNER AVANT DE GOYER
 ----------------------------
 technos a connaitre en surface, pour choix
 
--	flow proxy
+
+
 -	rex-ray docker
 -	nginx request processing
 -	vessel docker

@@ -105,9 +105,16 @@ Pour la mise en place du serveur, utilisation de Ansible pour la configuration d
 Je verrai plus tard pour les répliques et tout le bousin, quand j'aurai plus d'expérience.
 
 
-### Note
+### Notes
 
 Possibilité d'utiliser [Docker machine](https://docs.docker.com/machine/overview/) pour installer des dockers sur des VHosts > swarm sur une seule machine ?
+
+#### Proxies pour swarms
+
+-	[Docker flow proxy](https://proxy.dockerflow.com/) / Reconfigure proxy every time a new service is deployed, or when a service is scaled
+	- [Ca parle de swarm](https://www.youtube.com/watch?v=oP0_H_UkkGA) / Gestion des IP entre clusters, y compris externes ?
+- [Traefik](https://containo.us/traefik/) / The Cloud Native Edge Router
+	- [Vidéo Docker](https://www.youtube.com/watch?v=RP40Iv_0yvA) / Lien ~routeur entre "l'extérieur" et les services sur le service
 
 
 
