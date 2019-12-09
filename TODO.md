@@ -1,29 +1,31 @@
 SE RENSEIGNER AVANT DE GOYER
 ----------------------------
+technos a connaitre en surface, pour choix
 
-stackshare : comparaison de technos
-	https://stackshare.io/stackups/ansible-vs-jenkins
-
-Mots clés docker / A RANGER AVANT DE REPRENDRE FORMATION
-
--	kubernetes
--	docker for web hosting
 -	travis ci
 -	flow proxy
 -	rex-ray docker
--	docker alpine
 -	nginx request processing
--	docker volume persistent data
--	microservice / https://microservices.io/
 -	vessel docker
--	docker source control
 -	websockets ? besoin pour nginx https://www.grafikart.fr/tutoriels/nodejs-nginx-960
-- ansible++, et ansible galaxy
-	
+-	Docker for web hosting
+
+Se manger la doc officielle sur les technos choisies
+
+- Nginx
+- Docker
+	-	Docker volume persistent data
+	-	Docker alpine
+	- Docker source control
+	- Docker from scratch
+
+
+Optimisations
+
 -	docker multi stage build
--	dockercon
--	docker swarm
+- ansible++, et ansible galaxy
 -	https://github.com/oupala/apaxy
+-	dockercon
 	
 -	✓ tmux
 -	✓ docker orchestration > kubernetes

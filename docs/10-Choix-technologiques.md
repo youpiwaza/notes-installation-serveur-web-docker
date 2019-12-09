@@ -7,21 +7,27 @@ Parce que pour chaque demande il existe plusieurs technologies pour y répondre,
 
 todo..
 
+*Prévoir avant les différentes variables possibles, ex: ports, chemins des dossiers, etc.*
+
 
 
 ## Orchestration
 
 > Installation/Réplication du serveur
+> **Gestion du workflow (dev > preprod > prod)**
 > Gestion des containers
 > Gestion de la scalabilité + No down time (répliques)
 
-Possibilités : Docker swarm / Kubernetes / Ansible ?
+Possibilités : ~~Docker swarm / Kubernetes~~ / Ansible
 
-https://vexxhost.com/blog/kubernetes-vs-docker-swarm-containerization-platforms/
+Choix arrété sur [Ansible dans un premier temps](/docs/07-Avance.md#orchestration), avec son interface graphique [AWX](https://github.com/ansible/awx).
 
-dev & preprod > 1 réplique
+- Pas de répliques ni 'no down time' pendant les déploiements.
 
-prod > 2 répliques
+Dans l'idéal, plus tard:
+
+- dev, preprod, debug > 1 réplique
+- prod > 2 répliques, scale automatique si fort trafic
 
 
 
