@@ -10,4 +10,4 @@ TODO
 
 ### Navigation
 
-La suite, [todo](/docs/hue.md), ou retour à la [table des matières](https://github.com/youpiwaza/notes-serveur).
+La suite, [Mes exigences](/docs/09-Exigences.md), ou retour à la [table des matières](https://github.com/youpiwaza/notes-serveur).

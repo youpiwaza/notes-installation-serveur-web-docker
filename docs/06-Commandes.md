@@ -144,4 +144,4 @@ Petite cheat sheet & annotations supplémentaires sur les commandes rencontrées
 
 ### Navigation
 
-La suite, [todo](/docs/07-todo.md), ou retour à la [table des matières](https://github.com/youpiwaza/notes-serveur).
+La suite, [Technologies avancées](/docs/07-Avance.md), ou retour à la [table des matières](https://github.com/youpiwaza/notes-serveur).

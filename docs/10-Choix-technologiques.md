@@ -10,4 +10,4 @@ TODO
 
 ### Navigation
 
-La suite, [todo](/docs/hue.md), ou retour à la [table des matières](https://github.com/youpiwaza/notes-serveur).
+La suite, [Mise en place sur le serveur](/docs/11-Mise-en-place.md), ou retour à la [table des matières](https://github.com/youpiwaza/notes-serveur).
