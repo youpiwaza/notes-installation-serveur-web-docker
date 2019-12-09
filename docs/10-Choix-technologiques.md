@@ -13,10 +13,10 @@ todo..
 
 ## Orchestration
 
-> Installation/Réplication du serveur
-> **Gestion du workflow (dev > preprod > prod)**
-> Gestion des containers
-> Gestion de la scalabilité + No down time (répliques)
+> Installation/Réplication du serveur  
+> **Gestion du workflow (dev > preprod > prod)**  
+> Gestion des containers  
+> Gestion de la scalabilité + No down time (répliques)  
 
 Possibilités : ~~Docker swarm / Kubernetes~~ / Ansible
 

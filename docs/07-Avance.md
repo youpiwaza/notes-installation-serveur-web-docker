@@ -10,10 +10,10 @@ Les notions un peu plus avancées, qui vont surement se choper leur propre dossi
 
 ## Orchestration
 
-> Installation/Réplication du serveur
-> Gestion des containers
-> Gestion de la scalabilité + No down time (répliques)
-> **Gestion du workflow (dev > preprod > prod)**
+> Installation/Réplication du serveur  
+> Gestion des containers  
+> Gestion de la scalabilité + No down time (répliques)  
+> **Gestion du workflow (dev > preprod > prod)**  
 
 Possibilités : ~~Docker swarm / Kubernetes~~ / Ansible
 
