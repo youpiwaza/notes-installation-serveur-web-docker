@@ -15,7 +15,7 @@ Les notions un peu plus avancées, qui vont surement se choper leur propre dossi
 > Gestion de la scalabilité + No down time (répliques)
 > **Gestion du workflow (dev > preprod > prod)**
 
-Possibilités : Docker swarm / Kubernetes / Ansible ?
+Possibilités : ~~Docker swarm / Kubernetes~~ / Ansible
 
 
 ### Ansible
