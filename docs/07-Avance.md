@@ -114,6 +114,7 @@ Possibilité d'utiliser [Docker machine](https://docs.docker.com/machine/overvie
 -	[Docker flow proxy](https://proxy.dockerflow.com/) / Reconfigure proxy every time a new service is deployed, or when a service is scaled
 	- [Ca parle de swarm](https://www.youtube.com/watch?v=oP0_H_UkkGA) / Gestion des IP entre clusters, y compris externes ?
 - [Traefik](https://containo.us/traefik/) / The Cloud Native Edge Router
+	- [Site offi](https://containo.us/traefik/) / Permet de définir des proxy a la volée : **Mapper des urls à des conteneurs (IP:PORTS)**
 	- [Vidéo Docker](https://www.youtube.com/watch?v=RP40Iv_0yvA) / Lien ~routeur entre "l'extérieur" et les services sur le service
 
 
@@ -224,7 +225,7 @@ Pour la culture générale et mieux apréhender la suite, je recommande de lire 
 
 Du coup, le rapport avec Nginx vient de ce [tutoriel Grafikart](https://www.grafikart.fr/tutoriels/nodejs-nginx-960).
 
-Au final, cela apprend à configurer Nginx pour héberger des websockets (ex : discussion en ligne), donc pas pertinent pour le moment.
+Au final, cela apprend à configurer Nginx pour héberger des websockets [doc](http://nginx.org/en/docs/http/ngx_http_upstream_module.html), ex : discussion chat en ligne, donc pas pertinent pour le moment.
 
 
 ### PM2

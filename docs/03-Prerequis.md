@@ -48,6 +48,8 @@ Durée _~10m en x2_
 |--------|--------------------------------------------------------|--------------------------------------------------|---------------------------------------------|-------------------|
 |  | Proxy vs. Reverse Proxy (Explained by Example) | Explication en schéma toukon | [Go](https://youtu.be/ozhe__GdWC8?t=299) |  |
 |  | Run Multiple Site from one IP with reverse proxy Nginx | **1 ip, redirige vers même ip différents ports** | [Go](https://www.youtube.com/watch?v=x1fnOJsX6wE) | **Indispensable** |
+| ssdnodes | Host multiple websites on one VPS with Docker and Nginx | Article de blog + config | [Go](https://blog.ssdnodes.com/blog/host-multiple-websites-docker-nginx/) |  |
+| ssdnodes | Hosting multiple SSL-enabled sites with Docker and Nginx | Config Nginx https | [Go](https://blog.ssdnodes.com/blog/host-multiple-ssl-websites-docker-nginx/) |
 
 
 ### Notes

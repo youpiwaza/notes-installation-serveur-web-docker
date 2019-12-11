@@ -38,7 +38,7 @@ Des explications succinctes concernant les termes utilisés.
 |-------------------------------------------------|---------------------------------|
 | Serveur http (réponse à une url) | Nginx, Apache |
 | Gestion de containers/isolation | Docker |
-| Gestion des mails | Postfix |
+| Gestion des mails | mailcow, Postfix |
 | Serveur DNS | OVH, BindOf |
 | Automatisation installation & tâches | Ansible |
 | CI/CD | Jenkins |

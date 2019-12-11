@@ -22,6 +22,8 @@ Ainsi que leurs réponses (ajoutées au fil de l'eau) et les justifications.
 - [✓] [Pour les environnements de preprod & prod, est-il possible de n'avoir d'un build Docker ?](#pour-les-environnements-de-preprod--prod-est-il-possible-de-navoir-dun-build-docker-) / Oui, et il le faut
 	- [✗] [Est-ce que le docker compose est obligatoire ? Jenkins gère t-il tout cela ?](#x-est-ce-que-le-docker-compose-up-est-obligatoire--jenkins-gère-t-il-tout-cela-)
 - [✗] [Peut-on avoir des images/builds Docker avec uniquement du code source ? Est-ce utile ?](#hey) / ?
+- [✗] [!! Création d'image (docker-compose), faut-il intégrer Nginx à chaque site ?](#hey) / ?
+- [✗] [Dans l'architecture d'un seul site, y a-t-il un interêt à avoir le dev (ex : dev.client1.com) (ainsi que ses dépendances) en ligne ?](#hey) / ?
 
 
 
@@ -155,6 +157,55 @@ cf. [Image dockerhub PHP-FPM](https://hub.docker.com/r/bitnami/php-fpm/#Connecti
 > Injection dans d'autres build Docker (php, etc.) ou dans les dossiers linkés ?
 
 todo...
+
+
+
+## X!! Création d'image (docker-compose), faut-il intégrer Nginx à chaque site ?
+
+> Pour des raisons de portabilité / déplacement de site
+
+[Katacoda création de site web statique](https://www.katacoda.com/courses/docker/create-nginx-static-web-server)
+
+C'est tellement simple une fois en place, il suffit de lancer l'image...
+
+Du coup un Nginx proxy, et un Nginx (dans docker-compose) par site afin que chaque site gère sa propre configuration.
+
+Ca parait plus logique...
+
+- ~~[SO / Docker nginx multiple apps on one host](https://stackoverflow.com/questions/49489482/docker-nginx-multiple-apps-on-one-host) / 1 Nginx pour 2 sites~~
+- [SO / NGINX and multiple docker-compose](https://stackoverflow.com/questions/48076605/nginx-and-multiple-docker-compose) / **Créer un réseau pour le proxy ouvert vers l'extérieur, et un réseau par (docker-compose) site fermé à l'extérieur hormis port 80/voulu**
+- ~~[SO / Is it possible to run multiple nginx docker containers on the same host?](https://stackoverflow.com/questions/47011323/is-it-possible-to-run-multiple-nginx-docker-containers-on-the-same-host) / A priori pas possible mais je pense que cela dépend si Nginx peut écouter sur d'autres ports..~~
+
+Le but serait d'avoir un proxy, qui redirige vers des docker-compose indépendants (chacun un site) disposant de leur propre serveur.
+
+Ce qui parait vachement plus isolé et portable, que d'avoir à déclencher une config spécifique via Ansible pour l'installation d'un site.
+
+_A noter que au pire on peut créer une composition avec ansible qui déploie uniquement la config voulue (utilisation des rôles/cookbook) pour le site.. mais du coup 1 ansible par site >.>_
+
+- ~~[SO / How to start nginx via different port(other than 80)](https://stackoverflow.com/a/12800469/12026487)~~
+	- ~~[Doc nginx](https://nginx.org/en/docs/http/server_names.html) / C'est directement dans la conf en fait..~~
+	- ~~**A noter qu'il faudra passer le port d'écoute en variable d'environnement**.. vu que si le site est seul c'est 80, mais dans notre cas il faudra un port par site..~~
+
+**Non, c'est le proxy qui se charge d'envoyer le flux vers le bon container. C'est transparent pour l'intérieur du conteneur.**
+
+Réponse : De préférence oui, si c'est possible.
+
+
+
+## X Dans l'architecture d'un seul site, y a-t-il un interêt à avoir le dev (ex : dev.client1.com) (ainsi que ses dépendances) en ligne ?
+
+> Le développement peut être fait en local (compose + git), et on ne met en ligne que les builds
+
+Cela permettrait de simplifier grandement l'architecture en ligne (pas de conteneurs dédiés aux technos nécessaires) par site.
+
+Retrait de 
+
+- Jenkins dédié
+- ~PHP / SQL (ou autre)
+
+Et ce qui permettrait d'avoir une base commune à l'ensemble des sites (~ Ansible + NDD + Nginx + image preprod + image prod)
+
+Attention ! Il faudra également gérer les `volumes` afin de pouvoir gérer les données utilisateurs (BDD & fichiers).
 
 
 

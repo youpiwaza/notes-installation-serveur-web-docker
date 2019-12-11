@@ -31,7 +31,7 @@ Liste de ce que doit être capable de faire mon serveur, en français (éviter l
 	- NDD
 	- Confirmation de paiements
 - Sous domaine avec interface graphique vers les ressources du serveur
-
+- Cron OS hôte : Auto update minors
 
 
 ## Orchestration

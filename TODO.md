@@ -1,12 +1,25 @@
 SE RENSEIGNER AVANT DE GOYER
 ----------------------------
 
+Ajouter photos schémas architecture : évolution & choix
+- Egalement architecture actuelle
+
+
 CLEAN EXIGENCES & CHOIX TECHNO >> rsync les deux && définir les plus tard dans exigences pour roadmap && ensuite prioriser && attaquer
 prioriser : Indispensable, prioritaire, plus tard, pas necessaire + statut : Fait/en cours/ a Faire
+
+Injecter et supprimer README_OLD
+
+
+---
 
 technos a connaitre en surface, pour choix
 
 -	Docker for web hosting
+	- AppArmor
+	- grsec
+	- SELinux 
+	- Restrict network access (e.g. egress)
 
 Se manger la doc officielle sur les technos choisies
 
@@ -18,6 +31,7 @@ Se manger la doc officielle sur les technos choisies
 
 Optimisations
 
+- Création d'image (docker-compose), faut-il intégrer Nginx à chaque site ? cd. 8-Questions.md
 -	docker multi stage build
 - ansible++, et ansible galaxy
 -	https://github.com/oupala/apaxy

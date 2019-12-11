@@ -25,6 +25,12 @@ _^^ /!\ 'volume' (/data du docker hôte) dispo entre != containers ; l'autre (ch
 
 cf. [ca](https://youtu.be/fqMOX6JJhGo?t=4458).
 
+**Note** :
+- Il est plutôt [recommadé d'utiliser exclusivement volumes](https://forums.docker.com/t/shared-web-hosting-with-docker-best-practices/7893?u=youpiwaza) afin d'éviter des failles de sécurité.
+- Pour les backups, s'adresser directement **aux volumes** du **docker** hôte, rien ne doit toucher l'OS (respect de l'isolation).
+- Utiliser des volumes nommés également, plutôt que `volume_from` pour piocher dans un conteneur.
+
+
 
 ### Navigation
 

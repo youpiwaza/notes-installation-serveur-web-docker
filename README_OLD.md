@@ -27,7 +27,7 @@ Utiliser [Ansible](https://www.grafikart.fr/tutoriels/ansible-753) pour installe
 - Mise en place des ~[certificats SSL](https://www.grafikart.fr/tutoriels/apache-ssl-letsencrypt-746)~ cf. [installation avancée](https://www.grafikart.fr/tutoriels/nginx-ssl-letsencrypt-747)
   - Certifs SSL gratuits [Let's encrypt](https://letsencrypt.org/fr/)
   - Tests certificats SSL [SSL Labs tests](https://www.ssllabs.com/ssltest/)
-- Mise en place serveur de mails (postfix)
+- Mise en place serveur de mails (postfix, [mailcow](https://mailcow.email/) ?)
 - Mise en place accès FTP pour utilisateurs existants [ProFTP](https://www.grafikart.fr/tutoriels/proftpd-755)
   - Annuaire simple des accès en place
 - MeP parefeu (iptables)

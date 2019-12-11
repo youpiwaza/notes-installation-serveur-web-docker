@@ -2,6 +2,8 @@
 
 Docker, kwaksé un container et création d'images
 
+Juste avant, [Création d'une image et utilisation du build](https://www.katacoda.com/courses/docker/create-nginx-static-web-server).
+
 Au programme : 
 
 - Création de Dockerfile
