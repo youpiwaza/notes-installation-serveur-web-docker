@@ -1,6 +1,8 @@
 SE RENSEIGNER AVANT DE GOYER
 ----------------------------
 
+a ranger.md > Docker for web hosting & bonnes pratiques
+
 Ajouter photos schémas architecture : évolution & choix
 - Egalement architecture actuelle
 
@@ -12,6 +14,8 @@ Injecter et supprimer README_OLD
 
 Séparation environnement de développement de la mise en ligne ?
 dev (local uniquement) != preprod/prod/debug
+
+
 
 
 ---
