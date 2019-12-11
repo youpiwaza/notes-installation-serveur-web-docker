@@ -2,13 +2,10 @@ SE RENSEIGNER AVANT DE GOYER
 ----------------------------
 
 CLEAN EXIGENCES & CHOIX TECHNO >> rsync les deux && définir les plus tard dans exigences pour roadmap && ensuite prioriser && attaquer
+prioriser : Indispensable, prioritaire, plus tard, pas necessaire + statut : Fait/en cours/ a Faire
 
 technos a connaitre en surface, pour choix
 
--	rex-ray docker
--	nginx request processing
--	vessel docker
--	websockets ? besoin pour nginx https://www.grafikart.fr/tutoriels/nodejs-nginx-960
 -	Docker for web hosting
 
 Se manger la doc officielle sur les technos choisies

@@ -67,7 +67,9 @@ Possibilités : Nginx / ~~Node~~
 
 Nginx, [tuto grafikart](https://www.grafikart.fr/tutoriels/nginx-692) avec MeP + logs + Redirections + Erreurs.
 
+[Documentation officielle Nginx](http://nginx.org/en/docs/)
 
+[E-book gratuit officiel](https://www.nginx.com/resources/library/complete-nginx-cookbook/) / Besoin d'inscription
 
 
 ## Docker

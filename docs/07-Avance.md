@@ -118,7 +118,7 @@ Possibilité d'utiliser [Docker machine](https://docs.docker.com/machine/overvie
 
 
 
-## Microservices [PLUS TARD]
+## Microservices
 
 Tout découper : une tâche = une fonction (~= un conteneur).
 
@@ -204,6 +204,56 @@ Par exemple, si Jenkins fait passer tous les tests à la release, il peut appele
 
 Jenkins
 
+
+
+## Websockets et serveur stream
+
+J'avais noté que cela pouvait être utile lors de la configuration de Nginx. Du coup on jette un oeil.
+
+[Définition mdn](https://developer.mozilla.org/fr/docs/Web/API/WebSockets_API) / ~API de promesses  entre client et serveur
+
+[Vidéo intro websockets](https://www.youtube.com/watch?v=vQjiN8Qgs3c) / Un peu plus graphique.
+
+Du coup, pour simplifier, il s'agit d'un genre de communication en temps réel entre un visiteur et le serveur.
+
+Cela permet de faire de multiples allers-retours, mais sans recharger le navigateur, ce qui ressemble un peu à de l'AJAX.
+
+Pour la culture générale et mieux apréhender la suite, je recommande de lire le [design pattern observer](https://refactoring.guru/design-patterns/observer), sur l'excellent site refactoring guru.
+
+---
+
+Du coup, le rapport avec Nginx vient de ce [tutoriel Grafikart](https://www.grafikart.fr/tutoriels/nodejs-nginx-960).
+
+Au final, cela apprend à configurer Nginx pour héberger des websockets (ex : discussion en ligne), donc pas pertinent pour le moment.
+
+
+### PM2
+
+À noter toutefois, la recommandation de [PM2](https://pm2.keymetrics.io/), qui permet la gestion de sripts node en tâche de fond (daemon) et monitoring, avec possibilité d'interface graphique dans le terminal.
+
+Possibilité également de scale les scripts (ex: 4 instances de serveur)
+
+
+
+## Divers
+
+Différentes technos remontées lors de la veille.
+
+
+### Rex-ray
+
+[Rex-ray](https://rexray.readthedocs.io/en/stable/)
+
+Permet de gérer la gestion des espaces de stockages des conteneurs (et swarms).
+
+Mais cette fonctionnalité existe déjà via Docker ; du coup je ne vais pas pousser pour le moment..
+
+
+### Vessel
+
+[Vessel](https://vessel.shippingdocker.com/)
+
+Environnement de dev/workflow pour travailler avec Docker et Laravel. Pas nécessaire pour le moment.
 
 
 ### Navigation

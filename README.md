@@ -8,6 +8,8 @@ Le but est de mettre en place une architecture clean & sécurisée à base de Do
 
 Bon étant donné la masse d'infos, j'ai tout découpé.
 
+Note : Veille techno faite fin 2019, et vu que j'ai une facheuse tendance à ne pas tenir mes projets à jour, n'hésitez pas à vérifier les sources/versions si ce repo à plus de 6 mois ;)
+
 
 ## Table des matières
 
@@ -48,6 +50,8 @@ Il va y avoir énormément de vidéos, ne pas hésiter à vitesse x2.
 	- a. [Orchestration](/docs/07-Avance.md#orchestration) / Config Host & Tâches usuelles & Essains de conteneurs
 	- b. [Microservices](/docs/07-Avance.md#microservices-plus-tard) / Tout éclater, 1 container pour 1 service (~= 1 table de bdd x))
 	- c. [CI/CD](/docs/07-Avance.md#ci-cd) / Intégration continue
+	- d. [Websockets et serveur stream](/docs/07-Avance.md#websockets-et-serveur-stream) / ~Serveur Node avec stream
+	- z. [Divers](/docs/07-Avance.md#divers) / Survols de technos
 
 8. [Mes questions](/docs/08-Questions.md)
 

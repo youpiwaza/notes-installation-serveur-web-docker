@@ -30,12 +30,14 @@ Liste de ce que doit être capable de faire mon serveur, en français (éviter l
 	- Hébergement
 	- NDD
 	- Confirmation de paiements
+- Sous domaine avec interface graphique vers les ressources du serveur
 
 
 
 ## Orchestration
 
 - Possibilité d'heberger les NDD ? >> Ansible automatisation
+- Installations des différents sites indépendantes (créer un rôle pour chaque ?)
 
 
 
