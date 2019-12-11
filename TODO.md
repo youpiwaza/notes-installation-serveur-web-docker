@@ -10,6 +10,9 @@ prioriser : Indispensable, prioritaire, plus tard, pas necessaire + statut : Fai
 
 Injecter et supprimer README_OLD
 
+Séparation environnement de développement de la mise en ligne ?
+dev (local uniquement) != preprod/prod/debug
+
 
 ---
 
