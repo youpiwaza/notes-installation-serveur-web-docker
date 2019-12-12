@@ -16,7 +16,9 @@ SE RENSEIGNER AVANT DE GOYER
 
 5. Manger la doc officielle
 
-6. Attaquer (enfin)
+6. Répondre à l'ensemble des questions 8
+
+7. Attaquer (enfin)
 
 - Tester
 - Valider
