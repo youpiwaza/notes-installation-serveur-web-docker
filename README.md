@@ -63,6 +63,7 @@ Après tout cet apprentissage, il est temps de mettre en place & monter en stack
 9. [Exigences](/docs/09-Exigences.md)
 
 10. [Choix technologiques](/docs/10-Choix-technologiques.md)
+	- a. [Architecture](/docs/10a-Architecture.md) / Schémas & évolutions
 
 11. [Mise en place](/docs/11-Mise-en-place.md)
 

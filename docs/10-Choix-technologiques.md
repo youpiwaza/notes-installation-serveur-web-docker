@@ -2,6 +2,11 @@
 
 Parce que pour chaque demande il existe plusieurs technologies pour y répondre, ici on fait et justifie nos choix, avant de les appliquer.
 
+Pages dédiées : 
+
+- [Architecture](/docs/10a-Architecture.md) / Schémas & évolutions
+
+
 
 ## Variables d'environnement/globales
 
