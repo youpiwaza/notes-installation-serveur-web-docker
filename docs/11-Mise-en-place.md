@@ -9,6 +9,13 @@ Les différentes étapes & tests effectués pour la mise en place du serveur.
 	- "Recettes" pour tout installer tranquilou, des [config communautaires](https://galaxy.ansible.com/)
 	- Autre [tuto Ansible](https://www.codementor.io/mamytianarakotomalala/how-to-deploy-docker-container-with-ansible-on-debian-8-mavm48kw0)
 
+### Sécurité
+
+https://opensource.com/business/15/3/docker-security-tuning
+
+https://towardsdatascience.com/top-20-docker-security-tips-81c41dd06f57
+
+https://snyk.io/blog/10-docker-image-security-best-practices/
 
 
 

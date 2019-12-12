@@ -61,7 +61,7 @@ Repomper [tuto grafikart ansible](https://www.youtube.com/watch?v=DwNapBHypE8)
 
 > Répartition du trafic entrant vers ce qu'il faut
 
-Possibilités : Nginx / ~~Node~~
+Possibilités : ~Nginx / ~~Node~~ / **Traefik**
 
 > Node n'est pas recommandé pour la mise en place de multiples sites (cf. grafikart v)
 
@@ -70,6 +70,13 @@ Nginx, [tuto grafikart](https://www.grafikart.fr/tutoriels/nginx-692) avec MeP +
 [Documentation officielle Nginx](http://nginx.org/en/docs/)
 
 [E-book gratuit officiel](https://www.nginx.com/resources/library/complete-nginx-cookbook/) / Besoin d'inscription
+
+
+PTET PLUTOT [TRAEFIK](https://containo.us/traefik/)
+
+- Plus récent
+- Dédié
+- Interface graphique x_x
 
 
 ## Docker

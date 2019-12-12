@@ -1,11 +1,10 @@
 SE RENSEIGNER AVANT DE GOYER
 ----------------------------
 
-a ranger.md > Docker for web hosting & bonnes pratiques
-
 Ajouter photos schémas architecture : évolution & choix
 - Egalement architecture actuelle
 
+a ranger.md > Docker for web hosting & bonnes pratiques
 
 CLEAN EXIGENCES & CHOIX TECHNO >> rsync les deux && définir les plus tard dans exigences pour roadmap && ensuite prioriser && attaquer
 prioriser : Indispensable, prioritaire, plus tard, pas necessaire + statut : Fait/en cours/ a Faire
@@ -27,8 +26,10 @@ technos a connaitre en surface, pour choix
 	- grsec
 	- SELinux 
 	- Restrict network access (e.g. egress)
+	
+- Kubernetes for web hosting
 
-Se manger la doc officielle sur les technos choisies
+Se manger la doc officielle ACTUALISÉE sur les technos choisies
 
 - Nginx
 - Docker
@@ -43,10 +44,22 @@ Optimisations
 - ansible++, et ansible galaxy
 -	https://github.com/oupala/apaxy
 -	dockercon
-	
--	✓ tmux
--	✓ docker orchestration > kubernetes
-	
+- Docker keywords > Bonnes pratiques / tips / tricks / security / optimisations
+
+
+
+---
+## Mise en place sur serveur
+
+> Tests, validation, build final
+
+
+
+
+--- 
+
+## (Bien) plus tard
+
 Technos a check
 
 -	node express
