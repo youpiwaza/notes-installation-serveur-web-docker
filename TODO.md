@@ -1,25 +1,31 @@
 SE RENSEIGNER AVANT DE GOYER
 ----------------------------
 
-Ajouter photos schémas architecture : évolution & choix
-- Egalement architecture actuelle
+1. Finir veille/découverte technos
 
-a ranger.md > Docker for web hosting & bonnes pratiques
+2. Docker for web hosting & bonnes pratiques (a ranger.md)
 
-CLEAN EXIGENCES & CHOIX TECHNO >> rsync les deux && définir les plus tard dans exigences pour roadmap && ensuite prioriser && attaquer
-prioriser : Indispensable, prioritaire, plus tard, pas necessaire + statut : Fait/en cours/ a Faire
+3. Séparation environnement de développement de la mise en ligne ?
 
-Injecter et supprimer README_OLD
+> dev (local uniquement) != preprod/prod/debug
 
-Séparation environnement de développement de la mise en ligne ?
-dev (local uniquement) != preprod/prod/debug
+4. clean exigence et choix technos
 
+- rsync les deux
+- Prioriser : Indispensable, prioritaire, plus tard, pas necessaire + statut : Fait/en cours/ a Faire
 
+5. Manger la doc officielle
+
+6. Attaquer (enfin)
+
+- Tester
+- Valider
+- Maj repo 10 & 11
 
 
 ---
 
-technos a connaitre en surface, pour choix
+Technos a connaitre en surface, pour choix
 
 -	Docker for web hosting
 	- AppArmor
@@ -47,15 +53,6 @@ Optimisations
 - Docker keywords > Bonnes pratiques / tips / tricks / security / optimisations
 
 
-
----
-## Mise en place sur serveur
-
-> Tests, validation, build final
-
-
-
-
 --- 
 
 ## (Bien) plus tard
@@ -64,7 +61,6 @@ Technos a check
 
 -	node express
 -	Netflix Titus
--	traefik
 -	codeship
 -	axios
 -	Migrer de Atom a vscode ? // atom vs vscode / most popular ide
