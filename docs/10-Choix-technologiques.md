@@ -34,6 +34,8 @@ Dans l'idéal, plus tard:
 - dev, preprod, debug > 1 réplique
 - prod > 2 répliques, scale automatique si fort trafic
 
+Utiliser [tuto grafikart](https://www.grafikart.fr/tutoriels/ansible-753) pour installer/réinstaller le serveur de manière clean et automatique (plutôt que d'avoir de la doc partout) & les tâches courantes
+
 
 
 ## Installation du serveur
@@ -49,12 +51,39 @@ Utilisation d'Ansible pour faire la configuration de l'hôte ?
 - Installation de terminaux
 	- zsh
 	- tmux
+	- [grafikart pimp terminal](https://www.grafikart.fr/tutoriels/pimp-my-shell-750)
 - Installation de Docker
-	- Configuration ?
+	- Mise en place d'Ansible
+		- run le build
+		- Stocker la configuration dans un projet git (backup)
+	- Configuration de Docker via Ansible
+		- Logs erreurs en priorité
+- Sécurité
+	- [Changer port par défaut](https://youtu.be/lXOdDal6qos?t=239)
+	- [Retirer connexion par mot de passe](https://youtu.be/lXOdDal6qos?t=324)
+		- [Ajouter un utilisateur SSH via clés seulement](https://youtu.be/lXOdDal6qos?t=449) : Remplace le mot de passe. ?
+	- Mise en place accès FTP pour utilisateurs existants [ProFTP](https://www.grafikart.fr/tutoriels/proftpd-755)
+	  - Annuaire simple des accès en place
+		- MeP parefeu (iptables)
+		- MeP anti-brute force [fail2ban](https://www.grafikart.fr/tutoriels/fail2ban-698)
+- Logs
+	- Créer un dossier log contenant les liens symboliques EXPLICITES vers les logs des différentes technos
+	- Ajouter un script/la conf qui envoie un email en cas d'erreur côté serveur
+- Mails
+	- Mise en place serveur de mails (postfix, [mailcow](https://mailcow.email/) ?)
+	- Envoi de mail + tester templates [mailinator](https://www.mailinator.com/)
 - Backups ?
-	- Intervalle de temps ?
-	- Clean après combien de temps ?
-
+	- Mise en place de backups automatiques via le CRON (~1 fois / jour, incrémental ?)
+	  - [Mise en place Rsync](https://www.youtube.com/watch?v=7Hb32v8e8W0) pour les fichiers
+	  - mysqldump > bdd sql
+	  - Ajouter un clean des logs (zip après 2 semaines, suppression après 2 ans)
+- Monitoring
+	- Script analyses performances (ex [config mysql](https://www.grafikart.fr/tutoriels/mysql-690))
+	- Bande passante : [iperf3](https://github.com/esnet/iperf)
+- Divers
+	- Ajouter une page par défaut pour le serveur (ou une redirection), en cas d'accès via l'IP
+	- Ajouter des pages personnalisées pour les différentes erreurs serveurs 50X
+	
 
 ### Arborescence / Dossiers
 
@@ -162,6 +191,14 @@ Kubernetes plus populaire, mais j'ai un meilleur feeling avec le swarm.
 Possibilité de gérer les deux via Ansible (exécution des commande via scripts yaml).
 
 
+## Migration des sites
+
+- Installer REDIS, et implementer (node et WP) pour gain de perfs
+  - Faire un test avec une base WP et faire un diff des perfs
+- Mise en place des ~[certificats SSL](https://www.grafikart.fr/tutoriels/apache-ssl-letsencrypt-746)~ cf. [installation avancée](https://www.grafikart.fr/tutoriels/nginx-ssl-letsencrypt-747)
+	  - Certifs SSL gratuits [Let's encrypt](https://letsencrypt.org/fr/)
+	  - Tests certificats SSL [SSL Labs tests](https://www.ssllabs.com/ssltest/)
+- Désactiver erreurs (php, etc.) & phpinfo en prod
 
 ### Navigation
 

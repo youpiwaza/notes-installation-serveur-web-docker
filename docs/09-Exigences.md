@@ -23,15 +23,21 @@ Liste de ce que doit être capable de faire mon serveur, en français (éviter l
 
 ## Convénience
 
+- Configuration du serveur scriptée, en cas de réinstallation/déplacement (Ansible)
+- Création des tâches usuelles (Ansible)
+ 	-	Ajouter un utilisateur serveur
+    - Ajouter un utilisateur serveur par site et limiter son accès (docker/ftp/annuaire ?)
+	- Création de sites à la volée
+	- Lien de nom de domaine à [un] conteneur à la volée (Traefik ?)
 - Possibilité d'utiliser simplement n'importe quelle techno (yay Docker)
-- Création de sites à la volée
-- Lien de nom de domaine à [un] conteneur à la volée
 - Possibilité de gérer des envois de mails types (templates) au clients
 	- Hébergement
 	- NDD
 	- Confirmation de paiements
 - Sous domaine avec interface graphique vers les ressources du serveur
-- Cron OS hôte : Auto update minors
+- Cron OS hôte
+  - Auto update minors
+  - Ajouter/Renouveler les certificats SSL (https)
 
 
 ## Orchestration
