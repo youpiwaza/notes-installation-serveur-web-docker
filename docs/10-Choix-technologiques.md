@@ -16,7 +16,7 @@ todo..
 
 
 
-## Orchestration
+## ~~Orchestration~~ Installation et Automatisation
 
 > Installation/Réplication du serveur  
 > **Gestion du workflow (dev > preprod > prod)**  
@@ -36,6 +36,15 @@ Dans l'idéal, plus tard:
 
 Utiliser [tuto grafikart](https://www.grafikart.fr/tutoriels/ansible-753) pour installer/réinstaller le serveur de manière clean et automatique (plutôt que d'avoir de la doc partout) & les tâches courantes
 
+## Orchestration des containers
+
+Possibilités : Docker swarm? / Kubernetes? / Mesos
+
+https://dockerswarm.rocks/
+
+2 interfaces graphiques avec swarm (monitoring ET management) !
+
++ recommandé avec traefik
 
 
 ## Installation du serveur
