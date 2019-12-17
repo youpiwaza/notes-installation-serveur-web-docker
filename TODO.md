@@ -19,6 +19,8 @@ SE RENSEIGNER AVANT DE GOYER
 
 > dev (local uniquement) != preprod/prod/debug
 
+123. https://dockerswarm.rocks/project-generators/
+
 4. clean exigence et choix technos
 
 - rsync les deux
