@@ -19,12 +19,14 @@ Des explications succinctes concernant les termes utilisés.
 | Scale/scalability | ~Mise à l'échelle : Possibilité de déployer un site sur de multiples ordinateurs, sans que ca parte en latte. |
 | Orchestration | Gestion de multiples ordinateurs/dockers/containers |
 |  |  |
-| **Docker** |  |
+| **Docker** [Doc officielle](https://docs.docker.com/engine/docker-overview/) |  |
 | Isolation | Donner à un projet son indépendance totale (aucune dépendance d'OS, de version de programme, ou d'autres projets adjacents). |
 | Docker | Nom de l'entreprise et de la technologie Docker. Plus d'infos dans les vidéos de connaissance de base. |
-| Docker image | Grosso merdo un dossier qui contiendrait un OS, des programmes classique et ton projet. Peut être stocké en ligne (_Docker hub_) et réutilisé partout. |
+| Docker daemon | Instance du logiciel qui se charge de gérer les demandes clients et les containers |
+| Docker client | Ligne de commande (CLI) qui nous permet d'envoyer des demandes au daemon |
+| Docker image | Template, souvent basé sur une image existante (ex: ubuntu) + surcharge (ex: ton code). Permet de créer des builds |
 | Docker build | Docker image compilée (regroupée en un seul fichier, ~zip) |
-| Docker container | Instance d'une image, hébergée sur un docker host |
+| Docker container | Instance d'un build, gérée par le docker daemon |
 | Docker host | OS de base, sur lequel est installé et tourne Docker, qui permet la mise en place de containers |
 | Dockerfile | Fichier de configuration d'une image Docker, si des actions spécifiques sont a faire (rajouter un programme, ajouter de la conf, ajouter des ressources projet, etc.) |
 | Docker compose | Assemblage de plusieurs images Docker, souvent reliées par un réseau Docker. Par exemple : un container 'serveur' accueille le visiteur, et communique avec un container 'PHP' qui lui même communique avec un container 'MySQL', ce qui permet d'afficher des infos de la bdd via php au visiteur. |

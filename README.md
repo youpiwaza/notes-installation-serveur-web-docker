@@ -53,6 +53,12 @@ Il va y avoir énormément de vidéos, ne pas hésiter à vitesse x2.
 	- d. [Websockets et serveur stream](/docs/07-Avance.md#websockets-et-serveur-stream) / ~Serveur Node avec stream
 	- z. [Divers](/docs/07-Avance.md#divers) / Survols de technos
 
+22. Lire la doc officielle, et premiers tests
+	- 0. Mise à jour de l'environnement de dev (terminal zsh)
+	- a. [Docker](https://docs.docker.com/) / Docker sera utilisé pour tester les autres technos
+	- b. [Ansible](https://docs.ansible.com/)
+		- [Ansible in depth pdf](https://www.ansible.com/resources/whitepapers/ansible-in-depth)
+
 8. [Mes questions](/docs/08-Questions.md)
 
 
