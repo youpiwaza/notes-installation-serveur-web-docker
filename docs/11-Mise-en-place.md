@@ -2,6 +2,8 @@
 
 Les différentes étapes & tests effectués pour la mise en place du serveur.
 
+(Opt) Réinstallation d'un [environnement de dev (windows T.T)](https://github.com/youpiwaza/install-dev-env)
+
 
 ## Installation de l'hôte
 
