@@ -161,7 +161,7 @@ Ansible + role + variables ? [tuto grafikart](https://www.youtube.com/watch?v=Dw
 
 > dev > preprod > prod
 
-Possibilités : Ansible /  / Kubernetes ?
+Possibilités : Ansible / Swarm / Kubernetes / [Capistrano](https://github.com/capistrano/capistrano)
 
 Kubernetes peut le faire : [Kubernetes The Easy Way!](https://youtu.be/kOa_llowQ1c?t=863)
 

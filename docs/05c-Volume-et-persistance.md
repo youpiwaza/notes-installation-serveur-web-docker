@@ -32,6 +32,27 @@ cf. [ca](https://youtu.be/fqMOX6JJhGo?t=4458).
 
 
 
+## Documentation officielle
+
+
+### Where and how to persist application data
+
+- Eviter autant que possible de stocker de l'info dans le conteneur. Préférer volumes > bind > conteneur storage.
+	- Utiliser bind pour le développement uniquement
+	- Possibilité en prod de [définir le volume sur le bind du dev](https://docs.docker.com/develop/dev-best-practices/#where-and-how-to-persist-application-data) ?
+- Définition des variables :
+	- [Docker secrets](https://docs.docker.com/engine/swarm/secrets/) pour les informations sensibles (identifiants, etc.)
+		- Usernames and passwords
+		- TLS certificates and keys
+		- SSH keys
+		- Other important data such as the name of a database or internal server
+		- Generic strings or binary content (up to 500 kb in size)
+		- Peut être utilisé pour différents [credentials](https://stackoverflow.com/questions/48186712/what-does-developer-credentials-exactly-mean-in-the-amazon-cognito-docs) en fonction des différents environnements (dev/preprod/prod), en particulier liés a l'hébergement (google, amazon, etc.)
+			- Cela doit être [stocké dans le contexte](https://12factor.net/config), et non dans l'app 
+	- [Docker Configs](https://docs.docker.com/engine/swarm/configs/) pour la configuration
+		- Configs are mounted into the container’s filesystem directly, without the use of a RAM disk.
+
+
 ### Navigation
 
 La suite, [Docker network](/docs/05d-Network.md), ou retour à la [table des matières](https://github.com/youpiwaza/notes-serveur).

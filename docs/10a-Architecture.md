@@ -24,6 +24,8 @@ Les sources (non images/technos) devront provenir de github, les bases de donné
 
 Pour les sites, chaque environnement (dev/preprod/prod) dispose de son docker compose.
 
+https://docs.docker.com/develop/dev-best-practices/#differences-in-development-and-production-environments
+
 Jenkins s'occupe des déploiements en écoutant (webhooks) github.
 
 ![Architecture site](/docs/images/191204-archi-v1-site.jpg)

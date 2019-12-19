@@ -145,7 +145,7 @@ Lors de commits/push, exécution automatique de tests unitaires. Si tout est goo
 - [Introduction CI/CD](https://www.youtube.com/watch?v=g0qSsex0Reg)
 - [Article plus poussé](https://djangostars.com/blog/continuous-integration-circleci-vs-travisci-vs-jenkins/)
 
-Possibilités : ~~Jenkins / Travis CI~~
+Possibilités : ~~Jenkins / Travis CI~~ / [Docker hub](https://docs.docker.com/docker-hub/builds/) ?
 
 Pas mis en place dans un premier temps.
 

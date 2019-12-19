@@ -2,6 +2,10 @@
 
 Remettre une couche de théorie afin de rentrer un peu plus dans Docker et ses dérivés.
 
+*EDIT milieu d'apprentissage : Ptaing qu'est-ce que la doc officielle s'enchaîne mal, ça saute de partout*
+
+*Je recommande de commencer par les [références](https://docs.docker.com/reference/) avant les guides*
+
 Au programme : 
 
 1. Dockerfile / Création d'images dockers & optimisation

@@ -10,6 +10,9 @@ Les différentes étapes & tests effectués pour la mise en place du serveur.
 [Tuto grafikart Ansible](https://www.youtube.com/watch?v=DwNapBHypE8)
 	- "Recettes" pour tout installer tranquilou, des [config communautaires](https://galaxy.ansible.com/)
 	- Autre [tuto Ansible](https://www.codementor.io/mamytianarakotomalala/how-to-deploy-docker-container-with-ansible-on-debian-8-mavm48kw0)
+	
+[Activation de buildkit](https://docs.docker.com/develop/develop-images/build_enhancements/#to-enable-buildkit-builds)
+
 
 ### Sécurité
 
