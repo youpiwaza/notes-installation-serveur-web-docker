@@ -4,13 +4,18 @@ SE RENSEIGNER AVANT DE GOYER
 5. Manger la doc officielle & Tester en local
 
 	1. Docker / Création d'un conteneur
-		- Dockerfile (hello world from scratch)
+		- OK Dockerfile (hello world from scratch)
+		- OK Networking
+		- Storage
+		- Production
+		
 	2. Kubernetes / Gestion de conteneurs
+		- Note : Plutôt docker swarm ? interfaces graphiques ~auto
 	3. Ansible / Configuration et automatisation
 		- AWX / Interface ^
-	4. Nginx / Serveur local, afficher un hello world
-		- Créer un HW 2
-	5. Traefik / Reverse proxy sur Nginx multiples
+	4. Traefik / Reverse proxy sur Nginx multiples
+	5. OK Nginx / Serveur local, afficher un hello world
+	- Créer un HW 2, avec rooting via traefik
 
 
 2. Docker for web hosting & bonnes pratiques (a ranger.md)

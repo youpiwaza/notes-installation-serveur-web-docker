@@ -9,6 +9,19 @@ Comment fonctionne le réseau entre les différents containers d'un docker compo
 | Peter Fischer | Docker Container Tutorial #9 container hostnames | Nommer hôte (admin@XXX) des conteneurs | https://www.youtube.com/watch?v=0Li9kzb_cJk |  |
 
 
+## Documentation officielle
+
+[Doc officielle](https://docs.docker.com/network/)
+
+- [Classic (bridge) container network doc](https://docs.docker.com/network/bridge/)
+- [Network tutorial](https://docs.docker.com/network/network-tutorial-standalone/)
+	- Pour la prod, ne pas utiliser le network `bridge` par défaut, mais un `user defined bridge`
+
+### Réseau pour swarm
+
+[doc officielle](https://docs.docker.com/network/overlay/)
+
+
 
 ### Navigation
 

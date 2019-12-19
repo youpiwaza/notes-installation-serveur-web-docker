@@ -78,6 +78,9 @@ A voir, il existe des [configs Ansible](https://blog.ruanbekker.com/blog/2018/06
 			- managing the swarm once you have everything running
 		- Tuto KO sur Docker desktop windows, les [pré-requis](https://docs.docker.com/get-started/part4/#prerequisites) passent pas, la réplique reste à 0/1
 
+- [Gestion du réseau](https://docs.docker.com/network/overlay/)
+
+
 
 ### Comparatifs
 
