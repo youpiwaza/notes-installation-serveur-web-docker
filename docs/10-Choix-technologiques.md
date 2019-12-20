@@ -6,6 +6,8 @@ Pages dédiées :
 
 - [Architecture](/docs/10a-Architecture.md) / Schémas & évolutions
 
+**Activer buildkit de docker !**
+
 
 
 ## Variables d'environnement/globales

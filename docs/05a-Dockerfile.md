@@ -47,6 +47,15 @@ _^ [Image alpine](https://nickjanetakis.com/blog/the-3-biggest-wins-when-using-a
 Docker est basé sur la méthodologie [12 factor app](https://12factor.net/), je recommande donc sa lecture afin de faciliter la compréhension (et l'optimisation) des images Docker.
 
 
+### docker build
+
+Je reco de se renseigner sur `docker build` avant d'enchaîner sur les Dockerfile. C'plus accesible.
+
+- [Commande docker build](https://docs.docker.com/engine/reference/commandline/build/#extended-description)
+- [Dockerfile doc](https://docs.docker.com/engine/reference/builder/) / Ne pas tout lire, aller chercher quand besoin
+- [SO / Why build from git repo](https://stackoverflow.com/questions/46636743/why-would-i-want-to-docker-build-from-a-repo-url)
+
+
 ### How to keep your images small
 
 [Doc officielle](https://docs.docker.com/develop/dev-best-practices/)

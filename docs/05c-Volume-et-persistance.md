@@ -53,6 +53,81 @@ cf. [ca](https://youtu.be/fqMOX6JJhGo?t=4458).
 		- Configs are mounted into the container’s filesystem directly, without the use of a RAM disk.
 
 
+### Gestion des fichiers (volumes, bind, store in containers)
+
+[doc offi](https://docs.docker.com/storage/)
+
+- La data peut être dans 3 endroits différents **de l'hôte**
+	- *bind* > dans le système de fichier de l'hôte `/home/USER/.../`
+		- Peut être géré par des processus externes à Docker
+	- *volume* > dans le système de fichier de l'hôte, mais dans un espace dédié de docker, ex: `/var/lib/docker/volumes/.../`
+		- Doit être géré par Docker uniquement !
+	- *in container* > dans la mémoire de l'hôte (RAM), **non persistant !**, jamais écrit sur les DD
+	
+- Préférer l'utilisation de `--mount` à `-v` ou `--volume`.
+- **Comportement liés au volumes**, cf. [doc](https://docs.docker.com/storage/#tips-for-using-bind-mounts-or-volumes)
+	- Si un **volume vide** est monté sur le dossier d'un conteneur qui n'est pas vide, le contenu du conteneur sera copié dans le volume
+		- Peut  être utilisé afin de pré-remplir des données
+		- [Vérifié :)](https://github.com/youpiwaza/server-related-tutorials/tree/master/01-docker/03-develop-with-docker/02-volumes)
+	- Si un **volume non-vide** est monté sur le dossier d'un conteneur qui n'est pas vide, **le contenu du conteneur sera obfusqué temporairement**
+		- ~Les données du volume monté seront accessibles depuis le conteneur
+		- Les données pré-existantes du conteneur (~le dossier cible) ne seront pas accessibles depuis le conteneur **TANT QUE** le volume sera monté
+		- [Vérifié :)](https://github.com/youpiwaza/server-related-tutorials/tree/master/01-docker/03-develop-with-docker/02-volumes) / les données du conteneur ne sont pas perdues, et redeviendront accessibles lorsque le volume sera démonté.
+			- ~similaire au comportement de `/mnt` lors de l'ajout d'une clé USB
+
+
+
+#### Volumes
+
+- Option recommandée pour stocker des infos
+- Plus facile à sauvegarder ou à migrer
+- Les volumes peuvent être explicitement nommés par l'utilisateur via `docker volume create`, dans le cas contraire ils seront créés gérés par docker (volume 'anonyme', nom aléatoire unique).
+- Un volume peut être monté simultanément sur différents conteneurs.
+- Les volumes sont persistants, même lorsqu'ils ne sont pas utilisés par un conteneur
+	- On peut supprimer les volumes non utilisés en utilisant `docker volume prune`
+- Possibilité de stocker les volumes sur des hôtes différents, ou dans le cloud	
+- Permet de découpler l'image du contenu
+- Recommandé pour les sauvegardes
+	- Arrêter le conteneur, copier, relancer le conteneur
+- N'augmente pas la taille du conteneur, contrairement aux données stockées à l'intérieur
+
+
+#### Bind mounts
+
+- Référence à un dossier ou des fichiers sur l'hôte, n'existe pas dans Docker (pas de copie)
+- Impossible à manager via el docker CLI
+- Représente potentiellement des failles de sécurité
+- Recommandé pour
+	- Passer de la configuration depuis l'hôte (note : plutôt utiliser secrets & config)
+	- L'environnement de développement, dans la mesure ou le conteneur évoluera directement
+
+
 ### Navigation
 
 La suite, [Docker network](/docs/05d-Network.md), ou retour à la [table des matières](https://github.com/youpiwaza/notes-serveur).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

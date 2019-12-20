@@ -10,6 +10,7 @@ Liste de ce que doit être capable de faire mon serveur, en français (éviter l
 - Sites en https
 - Résistance au flood & IP ban
 - Load balancer
+- Correction automatique de l'horloge du serveur (CRON ?) afin d'éviter les desync (peut causer des problèmes de mailing et autres, et apparement sur les swarms de conteneurs)
 
 
 
