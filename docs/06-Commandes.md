@@ -100,6 +100,8 @@ Petite cheat sheet & annotations supplémentaires sur les commandes rencontrées
 
 [Liste des commandes docker](https://youtu.be/fqMOX6JJhGo?t=1276)
 
+`docker ps -a` // liste de l'ensemble des containers + status + plus lisible
+
 | Commande | Argument | Kwaksafé |
 |-------------------------------------|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | `docker build` |  | Faire un build de l'image : même chose que run MAIS read only |

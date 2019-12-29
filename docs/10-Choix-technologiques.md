@@ -2,6 +2,8 @@
 
 Parce que pour chaque demande il existe plusieurs technologies pour y répondre, ici on fait et justifie nos choix, avant de les appliquer.
 
+[IaC Infrastructure as Code](https://www.udemy.com/course/linux-academy-devops-essentials/learn/lecture/13781156#overview) / DevOps > Versionner la configuration de tout et faire exécuter via automatisation.
+
 Pages dédiées : 
 
 - [Architecture](/docs/10a-Architecture.md) / Schémas & évolutions
@@ -100,7 +102,9 @@ Utilisation d'Ansible pour faire la configuration de l'hôte ?
 
 Repomper [tuto grafikart ansible](https://www.youtube.com/watch?v=DwNapBHypE8)
 
-
+Pas de soucis de droits (pas de sudo)
+- /home/USER
+- /var
 
 ## Load balancer
 
@@ -200,6 +204,14 @@ Possibilités : ~Ansible / Kubernetes / Docker swarm ?
 Kubernetes plus populaire, mais j'ai un meilleur feeling avec le swarm.
 
 Possibilité de gérer les deux via Ansible (exécution des commande via scripts yaml).
+
+
+
+## Monitoring
+
+- [Udemy devops monitoring tools](https://www.udemy.com/course/linux-academy-devops-essentials/learn/lecture/13781206#overview)
+- [Docker swarm rocks](https://dockerswarm.rocks/)
+
 
 
 ## Migration des sites

@@ -10,8 +10,8 @@ Liste de ce que doit être capable de faire mon serveur, en français (éviter l
 - Sites en https
 - Résistance au flood & IP ban
 - Load balancer
-- Correction automatique de l'horloge du serveur (CRON ?) afin d'éviter les desync (peut causer des problèmes de mailing et autres, et apparement sur les swarms de conteneurs)
-
+- **Correction automatique de l'horloge du serveur** (CRON ?) afin d'éviter les desync (peut causer des problèmes de mailing et autres, et apparement sur les swarms de conteneurs)
+- differents users, en cas de mainenance a plusieurs
 
 
 ## Monitoring
@@ -19,6 +19,11 @@ Liste de ce que doit être capable de faire mon serveur, en français (éviter l
 - Analyse en temps réel des capacités utilisées de la machine hôte
 - Analyse des etats et des capacités des différents containers
 - Envoi de mail si problème
+- Logs
+	- Récupération des logs depuis les containers vers l'hôte
+	- Envoi de mail si problème
+  - **Accès simple et rapied aux logs** à la fois container & hôte / liens symboliques ? répliques dans dossier hôte dédié ?
+  - **Ecrémer les logs via CRON histoire de pas se taper 2Go+ de DL au bout de 3 ans**
 
 
 
@@ -57,8 +62,7 @@ Liste de ce que doit être capable de faire mon serveur, en français (éviter l
 	- Possibilité de tester un build (tag) particulier sur un environnement dédié (debug)
 	
 - Logs
-	- Récupération des logs depuis les containers vers l'hôte
-	- Envoi de mail si problème
+	- Affichage et log des technologies dédiées
 	
 - Filets de sécurité
 	- Les codes sources seront sur github/lab

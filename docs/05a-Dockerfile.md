@@ -39,6 +39,8 @@ _^ [Image alpine](https://nickjanetakis.com/blog/the-3-biggest-wins-when-using-a
 | Docker | Best practices for building secure Docker images | BP sécuritay | [Go](https://www.youtube.com/watch?v=LmUw2H6JgJo) | **user / utilisateur  pas root** |
 | kubucation | Proper DOCKER CACHING: Speed up your build with this optimized Dockerfile | Cache pour package.json dans build image | [Go](https://www.youtube.com/watch?v=oZ9nyCWERYc) |  |
 | Cocadmin |  | Améliorer perfs réseaux docker | [Go](https://www.youtube.com/watch?v=Z5y7AkOko-o) | à confirmer, potentiellement dangereux |
+| udemy |  | Détails instructions commandes DF | [Go](https://www.udemy.com/course/docker-for-beginners/learn/lecture/14002050#overview) | Plus digeste que la doc offi |
+| udemy |  | Utiliser ARG pour stocker les versions | [Go](https://www.udemy.com/course/docker-essentials/learn/lecture/12339826#overview) | Bonne pratique |
 
 
 

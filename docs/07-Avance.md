@@ -15,7 +15,7 @@ Les notions un peu plus avancées, qui vont surement se choper leur propre dossi
 > Gestion de la scalabilité + No down time (répliques)  
 > **Gestion du workflow (dev > preprod > prod)**  
 
-Possibilités : ~~Docker swarm / Kubernetes~~ / Ansible
+Possibilités : Docker swarm / ~~Kubernetes~~ / Ansible ?
 
 
 ### Ansible
@@ -63,6 +63,8 @@ Pas assez didactique, ca manque de schéma et de commande simples..
 Pas pu tester, tuto KO sur windows..
 
 A voir, il existe des [configs Ansible](https://blog.ruanbekker.com/blog/2018/06/14/deploy-docker-swarm-using-ansible/) pour déployer le swarm..
+
+- [Tuto udemy](https://www.udemy.com/course/docker-essentials/learn/lecture/12366056#overview) très complet
 
 -	[Docker swarm](https://docs.docker.com/engine/swarm/)
 	- [Concepts clés](https://docs.docker.com/engine/swarm/key-concepts/)

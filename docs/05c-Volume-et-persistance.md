@@ -11,6 +11,7 @@ Permet également de linker les données d'un projet, concrètement se créer un
 | freeCodeCamp.org |  | Container + persistance (y compris sql) | [Go](https://youtu.be/fqMOX6JJhGo?t=2430) | ♥ |
 | Peter Fischer | Docker Container Tutorial #10 Handling Volumes | Diff 2 types de persistances | [Go](https://www.youtube.com/watch?v=pOGVngLsaX4) |  |
 |  |  | ^ Exemple pour backup en MS |  |  |
+| udemy | Docker storage and when to use them | Explication rapide 3 types de stockages différents | [Go](https://www.udemy.com/course/docker-essentials/learn/lecture/12351532#overview) |  |
 
 
 --- 
@@ -74,6 +75,7 @@ cf. [ca](https://youtu.be/fqMOX6JJhGo?t=4458).
 		- Les données pré-existantes du conteneur (~le dossier cible) ne seront pas accessibles depuis le conteneur **TANT QUE** le volume sera monté
 		- [Vérifié :)](https://github.com/youpiwaza/server-related-tutorials/tree/master/01-docker/03-develop-with-docker/02-volumes) / les données du conteneur ne sont pas perdues, et redeviendront accessibles lorsque le volume sera démonté.
 			- ~similaire au comportement de `/mnt` lors de l'ajout d'une clé USB
+		- Note : La doc annonce un comportement différent pour *bind*, mais d'après les explications cela semble être le même..
 
 
 
