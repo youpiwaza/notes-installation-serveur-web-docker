@@ -4,6 +4,8 @@ A RANGER
 00. Ajouter cours DevOps dans les trucs à regarder dans la doc avant de rentrer dans le gras, dans les pré-requis (fichier dédié ?)
 	- Outils a jour / [Xebialabs periodic table](https://xebialabs.com/periodic-table-of-devops-tools/)
 
+005. Avant goyer avec DockerFiles & compose, voir pour git & hub, afin de sauvegarder les images d'exercice sur le hub (bonnes pratiques)
+
 01. Créer la configuration en [IaC](https://www.udemy.com/course/linux-academy-devops-essentials/learn/lecture/13781164#overview)
 	- Utiliser Ansible pour mise en place du serveur
 	- Veersionner la configuration (cookbook ansible ?) à utiliser

@@ -27,7 +27,7 @@ todo..
 > Gestion des containers  
 > Gestion de la scalabilité + No down time (répliques)  
 
-Possibilités : ~~Docker swarm / Kubernetes~~ / Ansible
+Possibilités : ~~Docker swarm / Kubernetes~~ / Ansible / ~~Chef~~ (reco négative cocadmin)
 
 Choix arrété sur [Ansible dans un premier temps](/docs/07-Avance.md#orchestration), avec son interface graphique [AWX](https://github.com/ansible/awx).
 
