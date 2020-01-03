@@ -13,6 +13,8 @@ Liste de ce que doit être capable de faire mon serveur, en français (éviter l
 - **Correction automatique de l'horloge du serveur** (CRON ?) afin d'éviter les desync (peut causer des problèmes de mailing et autres, et apparement sur les swarms de conteneurs)
 - differents users, en cas de mainenance a plusieurs
 
+[Exemple de conf nginx](https://github.com/PrivateBin/docker-nginx-fpm-alpine/blob/master/etc/nginx/nginx.conf)
+
 
 ## Monitoring
 

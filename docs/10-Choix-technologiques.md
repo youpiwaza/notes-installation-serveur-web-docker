@@ -4,6 +4,8 @@ Parce que pour chaque demande il existe plusieurs technologies pour y répondre,
 
 [IaC Infrastructure as Code](https://www.udemy.com/course/linux-academy-devops-essentials/learn/lecture/13781156#overview) / DevOps > Versionner la configuration de tout et faire exécuter via automatisation.
 
+- Respecter l'arborescence des containers lors de l'override de la configuration
+
 Pages dédiées : 
 
 - [Architecture](/docs/10a-Architecture.md) / Schémas & évolutions

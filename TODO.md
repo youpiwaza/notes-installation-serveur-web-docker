@@ -1,6 +1,10 @@
 A RANGER
 --------
 
+Taf
+- Cron par site
+- set de capabilities pour montage container (cf. security)
+
 00. Ajouter cours DevOps dans les trucs à regarder dans la doc avant de rentrer dans le gras, dans les pré-requis (fichier dédié ?)
 	- Outils a jour / [Xebialabs periodic table](https://xebialabs.com/periodic-table-of-devops-tools/)
 
