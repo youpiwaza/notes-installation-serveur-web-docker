@@ -99,7 +99,26 @@ SE RENSEIGNER AVANT DE GOYER
 - Valider
 - Maj repo 10 & 11
 
+---
 
+# Indexation ressources tests
+
+- server-related-tutorials
+  - 01-docker
+    - 01-Docker-desktop 
+      - 01 // Installation docker & tests de base
+      - 02 // Modification image & création d'un build
+      - 03 // Installation & tests kube
+      - 04 // Installation & tests swarm
+    - 02-WLS // Installation docker & docker-compose (SPECIAL) sur WLS, et lien vers Docker desktop (windows) + COMMANDE LIEN WLS DDesktop
+    - 03-develop-with-docker
+      - 01 // Création de dockerfile, context
+      - 02 // Build depuis github, Mise en place des volumes (& bind), Backup & restauration volumes
+    - 04-my-tests
+      - 01 // Dockerfile		/ Nginx 						/ site statique sans process, , github
+      - 02 // Docker compose 	/ Nginx + PHP					/ Configuration de Nginx & php-fpm, bash containers, exploration configs
+      - 03 // Docker compose	/ Nginx + PHP + SQL + adminer 	/ Custom Dockerfile (Php + PDO), bash containers, exploration configs, networks, init SQL, volumes, docker secrets (KO)
+      
 ---
 
 Technos a connaitre en surface, pour choix
