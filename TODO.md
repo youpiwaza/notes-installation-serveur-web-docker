@@ -117,7 +117,8 @@ SE RENSEIGNER AVANT DE GOYER
     - 04-my-tests
       - 01 // Dockerfile		/ Nginx 						/ site statique sans process, , github
       - 02 // Docker compose 	/ Nginx + PHP					/ Configuration de Nginx & php-fpm, bash containers, exploration configs
-      - 03 // Docker compose	/ Nginx + PHP + SQL + adminer 	/ Custom Dockerfile (Php + PDO), bash containers, exploration configs, networks, init SQL, volumes, docker secrets (KO)
+      - 03 // Docker compose	/ Nginx + PHP + SQL + adminer 	/ Custom Dockerfile (Php + PDO), bash containers, exploration configs, networks, init SQL, volumes, docker secrets (KO), dockerhub push
+      - 04 // Traefik + setup docker-compose + setup swarm + conf.
       
 ---
 
