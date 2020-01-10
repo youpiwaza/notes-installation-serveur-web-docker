@@ -1,5 +1,38 @@
-A RANGER
+TODO / Clean todo :D / A RANGER
 --------
+
+Caddy vs Nginx (serveur web)
+
+https://www.google.com/search?q=caddy+vs+nginx&oq=caddy+vs+&aqs=chrome.1.69i57j0l7.2745j0j7&sourceid=chrome&ie=UTF-8)
+
+---
+
+Healthcheck example
+
+```yml
+  daServiceQuiTapeSurDeuxPoints3000:
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000"]
+      interval: 5s
+      timeout: 1s
+      retries: 5 
+```
+
+
+Limiter les ressources allouées
+
+```yml
+  daService
+    deploy:
+      resources:
+        limits:
+          memory: 128M
+        reservations:
+          memory: 64M
+```
+
+---
+
 
 Taf
 - Cron par site
@@ -115,11 +148,22 @@ SE RENSEIGNER AVANT DE GOYER
       - 01 // Création de dockerfile, context
       - 02 // Build depuis github, Mise en place des volumes (& bind), Backup & restauration volumes
     - 04-my-tests
-      - 01 // Dockerfile		/ Nginx 						/ site statique sans process, , github
-      - 02 // Docker compose 	/ Nginx + PHP					/ Configuration de Nginx & php-fpm, bash containers, exploration configs
-      - 03 // Docker compose	/ Nginx + PHP + SQL + adminer 	/ Custom Dockerfile (Php + PDO), bash containers, exploration configs, networks, init SQL, volumes, docker secrets (KO), dockerhub push
-      - 04 // Traefik + setup docker-compose + setup swarm + conf.
-      
+      - 01 // Dockerfile			/ Nginx 						/ OK	/ Site statique sans process, , github
+      - 02 // Docker compose 		/ Nginx + PHP					/ OK	/ Configuration de Nginx & php-fpm, bash containers, exploration configs
+      - 03 // Docker compose		/ Nginx + PHP + SQL + adminer 	/ OK	/ Custom Dockerfile (Php + PDO), bash containers, exploration configs, networks, init SQL, volumes, docker secrets (KO), dockerhub push
+      - 04 // Docker compose		/ Traefik						/ OK	/ docker-compose CLI
+      - 05 // Swarm 				/ Traefik + consul 				/ KO	/ Faire tourner l'exemple docker rocks > ~KO + traefik outdated
+      - 06 // Swarm					/ Traefik + ui					/ OK	/ Mise en place de traefik et de son ui + configuration de services (routes)
+      - 07 // Docker compose		/ Traefik						/ OK	/ Exemple dockerhub, routes automatiques pour compose
+      - 07.1 // run compose swarm	/ Traefik						/ OK	/ Routes automatiques (avec réécriture) pour run, compose & swarm
+      - 07.2 // compose				/ Traefik						/ ~KO 	/ Routes automatiques (avec réécriture) pour projet concret (php + sql) > KO aléatoire 1/2
+      - 07.3 // swarm				/ Traefik						/ KO 	/ Routes via labels pour projet concret (php + sql)
+      - 08	// swarm				/ swarmprom						/ OK	/ Pack outils de monitoring + conf windows. Tout OK excepté Nodes swarm
+
+
+POUR LES TRUCS KO :  `docker service logs NOM_DU_SERVICE`
+
+
 ---
 
 Technos a connaitre en surface, pour choix
