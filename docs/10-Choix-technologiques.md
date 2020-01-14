@@ -10,13 +10,15 @@ Pages dédiées :
 
 - [Architecture](/docs/10a-Architecture.md) / Schémas & évolutions
 
-**Activer buildkit de docker !**
+**Activer buildkit de docker !** & swarmkit
 
 
 
 ## Variables d'environnement/globales
 
 todo..
+
+docker config & secrets + backups
 
 *Prévoir avant les différentes variables possibles, ex: ports, chemins des dossiers, etc.*
 
@@ -45,6 +47,8 @@ Utiliser [tuto grafikart](https://www.grafikart.fr/tutoriels/ansible-753) pour i
 ## Orchestration des containers
 
 Possibilités : Docker swarm? / Kubernetes? / Mesos
+
+[Docker swarm (1 manager) vs docker-compose](https://devopstuto-docker.readthedocs.io/en/latest/docker_swarm/articles/2018/01__2018_10_17/01__2018_10_17.html) > docker swarm for production !
 
 https://dockerswarm.rocks/
 
