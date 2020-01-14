@@ -1,11 +1,30 @@
 TODO / Clean todo :D / A RANGER
+
 --------
+
+[Gros recap 1 page de swarm](https://www.aquasec.com/wiki/display/containers/Docker+Swarm+101)
+
+--------
+
+[Vidéo Traefik v2 officielle avec un accent horrible, mais je crache pas trop dessus je dois avoir le même)[https://www.youtube.com/watch?v=RP40Iv_0yvA]
+
+---
+
 
 Caddy vs Nginx (serveur web)
 
 https://www.google.com/search?q=caddy+vs+nginx&oq=caddy+vs+&aqs=chrome.1.69i57j0l7.2745j0j7&sourceid=chrome&ie=UTF-8)
 
 ---
+
+Docker for production docs
+
+---
+
+[Traefik canary release](https://youtu.be/RP40Iv_0yvA?t=1891)
+
+---
+
 
 Healthcheck example
 
@@ -38,7 +57,7 @@ Taf
 - Cron par site
 - set de capabilities pour montage container (cf. security)
 
-00. Ajouter cours DevOps dans les trucs à regarder dans la doc avant de rentrer dans le gras, dans les pré-requis (fichier dédié ?)
+1.  Ajouter cours DevOps dans les trucs à regarder dans la doc avant de rentrer dans le gras, dans les pré-requis (fichier dédié ?)
 	- Outils a jour / [Xebialabs periodic table](https://xebialabs.com/periodic-table-of-devops-tools/)
 
 005. Avant goyer avec DockerFiles & compose, voir pour git & hub, afin de sauvegarder les images d'exercice sur le hub (bonnes pratiques)
