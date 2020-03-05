@@ -1,5 +1,89 @@
 TODO / Clean todo :D / A RANGER
 
+
+cocadmin / Docker Hacké ! Analyse de la faille CVE-2019-5736
+https://www.youtube.com/watch?v=Ktud3FDkKcE
+
+Bonne pratique Dockerfile
+
+- Toujours utiliser un utilsateur dédié !
+
+```
+FROM ...
+RUN ...
+USER pasRoot
+```
+
+---------
+
+cocadmin / Erreurs à éviter avec Docker et les conteneurs
+https://www.youtube.com/watch?v=XPmmlqTgKGI
+
+- 1 conteneur par stack (ex: Ne pas lancer 1 conteneur avec un apache ET un sql)
+- Ne pas accéder au conteneur pour modifier la conf > Modifier la conf et relancer le conteneur (sinon conf perdue au reboot)
+- Ne pas créer d'images différentes dev/prod > Utiliser des variables de conf
+- Dev > ne pas build systématiquement les images, utiliser les volumes
+- Prod > Ne pas laisser les outils de dev a l'intérieur
+  - Images plus grosse que nécessaire
+  - Risques de sécurité
+  - Solution : multi stage build : Créer l'image prod a partir des artéfacts de l'image de dev
+- Ne pas stacker les commandes RUN (création d'autres layer)
+  - Solution : Utiliser && dans la même commande RUN
+- Spécifier la version de l'image de base (instruction FROM)
+
+--------
+
+
+##Docker for web hosting
+
+[Bonnes pratiques](https://forums.docker.com/t/shared-web-hosting-with-docker-best-practices/7893)
+
+- Ne jamais faire tourner les conteneurs via `root`, toujours utiliser `USER` (ajout d'utilisateurs)
+- Utiliser AppArmor
+- Utiliser grsec
+- Utiliser SELinux 
+- Restrict network access (e.g. egress) in running containers as much as possible
+- Look into --cap-drop and drop the caps those containers won’t need
+	- [Docker container capabilites](https://opensource.com/business/15/3/docker-security-tuning)
+- Do not allow anyone access to the Docker API or CLI
+- Do not bind mount files to/from the host
+	- Utiliser `volume` et non `links`
+	- Passer par un serveur FTP dans son propre conteneur [Go](https://forums.docker.com/t/shared-web-hosting-with-docker-best-practices/7893/4?u=youpiwaza)
+- Stay on top of CVEs, especially for the Linux kernel itself
+	- Common Vulnerabilities and Exposures (CVE)
+	- [Linux](https://www.google.com/search?q=linux+CVEs)
+	- [Ubuntu](https://www.google.com/search?q=ubuntu+CVEs)
+	
+https://opensource.com/business/15/3/docker-security-tuning
+
+
+
+- Cron par site
+- set de capabilities pour montage container (cf. security)
+
+
+--------
+
+[Meilleure gestion des clés SSH](https://www.ssh.com/ssh/keygen)
+
+--------
+
+[Docker swarm 101](https://www.aquasec.com/wiki/display/containers/Docker+Swarm+101)
+
+--------
+
+Nginx courses
+
+- https://www.nginx.com/resources/webinars/nginx-basics-best-practices/
+- https://www.nginx.com/resources/library/high-performance-caching-with-nginx-and-nginx-plus/
+
+--------
+
+Installation de docker pour windows via Ansible, cf. installation automatique du terminal
+
+- https://galaxy.ansible.com/viasite-ansible/zsh
+- https://raw.githubusercontent.com/viasite-ansible/ansible-role-zsh/master/install.sh
+
 --------
 
 [Gros recap 1 page de swarm](https://www.aquasec.com/wiki/display/containers/Docker+Swarm+101)
@@ -104,25 +188,6 @@ Faire environnementS de dev Docker
 - Conteneurs montés a la volée en fonction des besoins, données persistées via *volumes*
 
 
-SE RENSEIGNER AVANT DE GOYER
-----------------------------
-
-5. Manger la doc officielle & Tester en local
-
-	1. Docker / Création d'un conteneur
-		- OK Dockerfile (hello world from scratch)
-		- OK Networking
-		- Storage
-		- Production
-		
-	2. Kubernetes / Gestion de conteneurs
-		- Note : Plutôt docker swarm ? interfaces graphiques ~auto
-	3. Ansible / Configuration et automatisation
-		- AWX / Interface ^
-	4. Traefik / Reverse proxy sur Nginx multiples
-	4.5. [Packer](https://www.packer.io/) / Image build/vm/container automation
-	5. OK Nginx / Serveur local, afficher un hello world
-	- Créer un HW 2, avec rooting via traefik
 
 
 
@@ -222,19 +287,11 @@ Optimisations
 
 ## (Bien) plus tard
 
-Technos a check
 
--	node express
--	Netflix Titus
--	codeship
--	axios
--	Migrer de Atom a vscode ? // atom vs vscode / most popular ide
--	Tuto serveur node complet [ici](https://www.youtube.com/watch?v=XCgCjasqEFo&list=PLQlWzK5tU-gDyxC1JTpyC2avvJlt3hrIh&index=2)
 - Mails https://www.bluemind.net/
 - https://www.opendns.com/
 
-- https://www.form.io/
-- PROJEQTOR 
+
 
 
 

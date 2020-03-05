@@ -10,7 +10,6 @@ Bon étant donné la masse d'infos, j'ai tout découpé.
 
 Note : Veille techno faite fin 2019, et vu que j'ai une facheuse tendance à ne pas tenir mes projets à jour, n'hésitez pas à vérifier les sources/versions si ce repo à plus de 6 mois ;)
 
-
 ## Table des matières
 
 1. [Lexique](/docs/01-Lexique.md)
@@ -72,4 +71,3 @@ Après tout cet apprentissage, il est temps de mettre en place & monter en stack
 	- a. [Architecture](/docs/10a-Architecture.md) / Schémas & évolutions
 
 11. [Mise en place](/docs/11-Mise-en-place.md)
-
