@@ -8,24 +8,24 @@ Ainsi que leurs réponses (ajoutées au fil de l'eau) et les justifications.
 **Liste des questions**
 
 - [Questions](#questions)
-	- [Comment gérer plusieurs sites depuis le même serveur ?](#comment-g%c3%a9rer-plusieurs-sites-depuis-le-m%c3%aame-serveur)
+	- [Comment gérer plusieurs sites depuis le même serveur ?](#comment-gérer-plusieurs-sites-depuis-le-même-serveur-)
 		- [Mais pour les sites utilisant un serveur NodeJS ? Sont-ils a la suite de Nginx ? Ou ~load balancer](#mais-pour-les-sites-utilisant-un-serveur-nodejs--sont-ils-a-la-suite-de-nginx--ou-load-balancer)
-		- [Bref, qui gère la répartition du trafic entrant ?](#bref-qui-g%c3%a8re-la-r%c3%a9partition-du-trafic-entrant)
-	- [L'orchestration est-elle nécessaire a mon niveau ?](#lorchestration-est-elle-n%c3%a9cessaire-a-mon-niveau)
-		- [Cela peut-il fonctionner avec un seul serveur, un seul hôte ?](#cela-peut-il-fonctionner-avec-un-seul-serveur-un-seul-h%c3%b4te)
-	- [Dois-je installer Docker directement sur l'hôte, ou passer par Ansible ?](#dois-je-installer-docker-directement-sur-lh%c3%b4te-ou-passer-par-ansible)
-		- [Pourquoi ne pas utiliser une image ou un build Docker ? Même fait maison](#pourquoi-ne-pas-utiliser-une-image-ou-un-build-docker--m%c3%aame-fait-maison)
-	- [Création d'un container par technologie ? Ou création d'un container par service par site ?](#cr%c3%a9ation-dun-container-par-technologie--ou-cr%c3%a9ation-dun-container-par-service-par-site)
-	- [Comment (bien) gérer les données des conteneurs ? (données persistées)](#comment-bien-g%c3%a9rer-les-donn%c3%a9es-des-conteneurs--donn%c3%a9es-persist%c3%a9es)
-	- [tf is a microservice ?](#tf-is-a-microservice)
-	- [Comment maintenir un service permanent, y compris lors de majs/problèmes](#comment-maintenir-un-service-permanent-y-compris-lors-de-majsprobl%c3%a8mes)
-	- [X Sur l'hôte, déploie t-on un seul conteneur Jenkins, ou un par site ?](#x-sur-lh%c3%b4te-d%c3%a9ploie-t-on-un-seul-conteneur-jenkins-ou-un-par-site)
-	- [Pour les environnements de preprod & prod, est-il possible de n'avoir qu'un build Docker ?](#pour-les-environnements-de-preprod--prod-est-il-possible-de-navoir-quun-build-docker)
-		- [Est-ce que le docker compose up est obligatoire ? Jenkins gère t-il tout cela ?](#est-ce-que-le-docker-compose-up-est-obligatoire--jenkins-g%c3%a8re-t-il-tout-cela)
-	- [PHP est-il dépendant de Nginx ? (un seul container pour les deux)](#php-est-il-d%c3%a9pendant-de-nginx--un-seul-container-pour-les-deux)
-	- [Peut-on avoir des images/builds Docker avec uniquement du code source ? Est-ce utile ?](#peut-on-avoir-des-imagesbuilds-docker-avec-uniquement-du-code-source--est-ce-utile)
-	- [Création d'image (docker-compose), faut-il intégrer Nginx à chaque site ?](#cr%c3%a9ation-dimage-docker-compose-faut-il-int%c3%a9grer-nginx-%c3%a0-chaque-site)
-	- [Dans l'architecture d'un seul site, y a-t-il un interêt à avoir le dev (ex : dev.client1.com) (ainsi que ses dépendances) en ligne ?](#dans-larchitecture-dun-seul-site-y-a-t-il-un-inter%c3%aat-%c3%a0-avoir-le-dev-ex--devclient1com-ainsi-que-ses-d%c3%a9pendances-en-ligne)
+		- [Bref, qui gère la répartition du trafic entrant ?](#bref-qui-gère-la-répartition-du-trafic-entrant-)
+	- [L'orchestration est-elle nécessaire a mon niveau ?](#lorchestration-est-elle-nécessaire-a-mon-niveau-)
+		- [Cela peut-il fonctionner avec un seul serveur, un seul hôte ?](#cela-peut-il-fonctionner-avec-un-seul-serveur-un-seul-hôte-)
+	- [Dois-je installer Docker directement sur l'hôte, ou passer par Ansible ?](#dois-je-installer-docker-directement-sur-lhôte-ou-passer-par-ansible-)
+		- [Pourquoi ne pas utiliser une image ou un build Docker ? Même fait maison](#pourquoi-ne-pas-utiliser-une-image-ou-un-build-docker--même-fait-maison)
+	- [Création d'un container par technologie ? Ou création d'un container par service par site ?](#création-dun-container-par-technologie--ou-création-dun-container-par-service-par-site-)
+	- [Comment (bien) gérer les données des conteneurs ? (données persistées)](#comment-bien-gérer-les-données-des-conteneurs--données-persistées)
+	- [tf is a microservice ?](#tf-is-a-microservice-)
+	- [Comment maintenir un service permanent, y compris lors de majs/problèmes](#comment-maintenir-un-service-permanent-y-compris-lors-de-majsproblèmes)
+	- [X Sur l'hôte, déploie t-on un seul conteneur Jenkins, ou un par site ?](#x-sur-lhôte-déploie-t-on-un-seul-conteneur-jenkins-ou-un-par-site-)
+	- [Pour les environnements de preprod & prod, est-il possible de n'avoir qu'un build Docker ?](#pour-les-environnements-de-preprod--prod-est-il-possible-de-navoir-quun-build-docker-)
+		- [Est-ce que le docker compose up est obligatoire ? Jenkins gère t-il tout cela ?](#est-ce-que-le-docker-compose-up-est-obligatoire--jenkins-gère-t-il-tout-cela-)
+	- [PHP est-il dépendant de Nginx ? (un seul container pour les deux)](#php-est-il-dépendant-de-nginx--un-seul-container-pour-les-deux)
+	- [Peut-on avoir des images/builds Docker avec uniquement du code source ? Est-ce utile ?](#peut-on-avoir-des-imagesbuilds-docker-avec-uniquement-du-code-source--est-ce-utile-)
+	- [Création d'image (docker-compose), faut-il intégrer Nginx à chaque site ?](#création-dimage-docker-compose-faut-il-intégrer-nginx-à-chaque-site-)
+	- [Dans l'architecture d'un seul site, y a-t-il un interêt à avoir le dev (ex : dev.client1.com) (ainsi que ses dépendances) en ligne ?](#dans-larchitecture-dun-seul-site-y-a-t-il-un-interêt-à-avoir-le-dev-ex--devclient1com-ainsi-que-ses-dépendances-en-ligne-)
 		- [Navigation](#navigation)
 
 
@@ -35,6 +35,8 @@ Ainsi que leurs réponses (ajoutées au fil de l'eau) et les justifications.
 Utiliser Nginx (gestion des requêtes entrantes) avec [reverse proxy](https://github.com/youpiwaza/notes-installation-serveur-web-docker/blob/master/docs/03-Prerequis.md#gestion-de-plusieurs-sites).
 
 Cela permet de rediriger chaque noms de domaine vers même la même IP, mais sur un port différent (ce qui correspondra aux différents containers).
+
+Edit 06/2020: Utilisatoin de Traefik a la place, même si Nginx reste possible.
 
 
 ### Mais pour les sites utilisant un serveur NodeJS ? Sont-ils a la suite de Nginx ? Ou ~load balancer
@@ -50,9 +52,9 @@ La réponse est renvoyée à traefik qui la transmet.
 
 ### Bref, qui gère la répartition du trafic entrant ?
 
-Nginx
+~~Nginx~~ 
 
-
+Edit 06/2020: Traefik
 
 ## L'orchestration est-elle nécessaire a mon niveau ?
 
@@ -64,6 +66,7 @@ Cela permettra d'éviter les absences de services (2 répliques par site en prod
 
 Cela permettra également une meilleure migration plus tard, si on doit évoluer.
 
+Edit 06/2020: Permet l'utilisation de répliques (plutôt que scale) et permettra l'évolution vers des essaims de serveurs si necessaires.
 
 ### Cela peut-il fonctionner avec un seul serveur, un seul hôte ?
 
@@ -75,7 +78,7 @@ Possibilité de monter des VMS afin d'obtenir 1 manager & 2 workers. Même si on
 
 Possibilité également d'avoir un unique bi-classé manager/worker.
 
-
+Edit 06/2020: 1 seul serveur à la fois Manager & worker.
 
 ## Dois-je installer Docker directement sur l'hôte, ou passer par Ansible ?
 
@@ -91,7 +94,8 @@ A noter que cette installation du serveur concernera docker, swarm, les utilisat
 
 Ces derniers seront des builds d'images, stockés sur dockerhub (et donc indépendants). Swarm servira à les instancier en tant que services.
 
-
+Edit 06/2020: Ansible pour installer l'hôte (le serveur), ainsi que Docker.
+Ansible peut également être utilisé pour la gestion des conteneurs.
 
 ### Pourquoi ne pas utiliser une image ou un build Docker ? Même fait maison
 
@@ -101,7 +105,7 @@ Il faudrait un hôte pour faire tourner docker pour monter un container hôte...
 
 Je préfère également gérer la sécurité dès l'hôte, pas dans une surcouche.
 
-
+Edit 06/2020: Pas d'OS "Docker", il faut passer par un hôte (~ubuntu) pour le faire tourner.
 
 
 ## Création d'un container par technologie ? Ou création d'un container par service par site ?
@@ -112,7 +116,9 @@ Un conteneur par service. Si la bdd d'un site tombe ou autre, cela ne doit pas i
 
 Par contre il faudra vérifier que cela peut fonctionner au niveau des performances.
 
-
+Edit 06/2020: Un conteneur par techno, reliés:
+- ensemble par un réseau privé (fourni par docker stack)
+- a internet par Traefik (réseau global overlay attachable)
 
 ## Comment (bien) gérer les données des conteneurs ? (données persistées)
 
@@ -122,7 +128,10 @@ Les links (Même chose mais dans l'hôte, en dehors du docker) seront utilisés 
 
 Links également pour récupérer les logs (apache, autre) depuis les conteneurs et les rapatrier vers l'hôte).
 
-
+Edit 06/2020: Named volumes:
+- N'est pas effacé dans le cas ou le conteneur est supprimé/reboot
+- Peut être accessible par de multiples conteneurs en même temps (backups, ftps, admins bdd)
+- Désolidarise les données du conteneurs (update du conteneur sans toucher aux données, conteneurs mock avec données réelles en red only)
 
 ## tf is a microservice ?
 
@@ -132,12 +141,14 @@ Comme ça chaque table est indépendante ?
 
 Edit : Un conteneur avec une image qui contient la réponse à une demande.
 
-
+Edit 06/2020: ~Au lieu d'avoir une seule bdd avec toutes les tables, on crée autant de conteneurs que de tables, chacun ayant son API REST
 
 ## Comment maintenir un service permanent, y compris lors de majs/problèmes
 
 Grâce à l'orchestration : Utilisation de différents hôtes qui contiennent différents containers (répliqués), ainsi qu'un master qui surveille/répartit.
 
+Edit 06/2020: Sur un seul serveur via les répliques, mais peut être KO si le serveur tombe.
+Le mieux reste 3 serveurs : 1 manager & 2 workers ayant chacun une réplique du service.
 
 
 ## X Sur l'hôte, déploie t-on un seul conteneur Jenkins, ou un par site ?
@@ -146,7 +157,7 @@ Les deux ne me paraissent pas déconnant, mais dans le but d'isoler je dirais un
 
 Besoin d'en savoir plus sur les micro-services et leur implémentation.
 
-
+Edit 06/2020: Les deux semblent viables, a voir au niveau des ressources.
 
 ## Pour les environnements de preprod & prod, est-il possible de n'avoir qu'un build Docker ?
 
@@ -158,7 +169,8 @@ Oui, et c'est même le but. cf. [Kubernetes The Easy Way!](https://youtu.be/kOa_
 
 Cela ne sert à rien de tester l'image en preprod si ce n'est pas la même qui est poussée en prod..
 
-
+Edit 06/2020: Un seul build docker ; des ajustements d'environnements peuvent être fait via des des variables (env/config/secrets)
+ 
 ### Est-ce que le docker compose up est obligatoire ? Jenkins gère t-il tout cela ?
 
 Swarm sera utilisé pour la prod, et non compose (même si cela reste possible)
@@ -181,7 +193,7 @@ Que cela soit à la main, ou via un manager (automatique (jenkins ou autre) ou n
 	- (Par service,) un nouveau conteneur est lancé avec le nouveau build et le trafic est redirigé dessus.
     	- L'ancien conteneur est supprimé une fois le trafic en cours dessus est terminé.
 
-
+Edit 06/2020: A cumuler avec un déploiement en dev AVANT de migrer la prod
 
 ## PHP est-il dépendant de Nginx ? (un seul container pour les deux)
 
@@ -191,7 +203,11 @@ Par contre, il faut qu'ils soient en réseau afin de pouvoir être utilisés.
 
 cf. [Image dockerhub PHP-FPM](https://hub.docker.com/r/bitnami/php-fpm/#Connecting-to-other-containers), il y a un exemple de conf composée `Ctrl + F` "Connecting-to-other-containers".
 
+Edit 06/2020: Nginx est un serveur web (publications sur ports ~80/443) sans PHP.
+Il peut être couplé à un conteneur phpfpm mais:
 
+- Il faut qu'ils soient reliés par un réseau
+- La configuration de nginx (/etc/nginx/nginx.conf) doit être modifiée en conséquence
 
 ## Peut-on avoir des images/builds Docker avec uniquement du code source ? Est-ce utile ?
 
@@ -218,9 +234,18 @@ Il est toutefois possible de créer une nouvelle image contenant les sources, vo
 - Une image est récupérée et éxécute un script sur les sources, par exemple minification du css/js
 - Les sources "compilées" sont injectées dans l'image d'un serveur web (ex: Nginx).
 
+Edit 06/2020: Code source stocké sur ~git
+Possibilité d'inclure les sources:
+- Directement dans une image (typiquement via un build jenkins qui va picher un tag spécifique sur git)
+- De les injecter dans un volume nommé utilisé par le conteneur (pré-population)
 
+2 choses:
+- Sources pré-compilées dans l'image > Au moins cela se lancera toujours partout, aucune dépendance APRES le build
+- Git+volumes permet une séparation des sources et de l'applicatif (image) et devrait donc faciliter les upgrades de technos
 
 ## Création d'image (docker-compose), faut-il intégrer Nginx à chaque site ?
+
+Edit 06/2020: ~Oui: chaque site qui plublie sur le ~~net~~ port 80/443 doit avoir un serveur web (nginx, caddy, apache)
 
 Pwah pwah pwah l'ancienne réponse est longue v.
 
@@ -281,6 +306,7 @@ Réponse courte : Non, aucun.
 > 
 > Attention ! Il faudra également gérer les `volumes` afin de pouvoir gérer les données utilisateurs (BDD & fichiers).
 
+Edit 06/2020: Yeah, pour les démos clients mais également pour vérifier le bon fonctionnement du reverse-proxy
 
 
 ### Navigation
